@@ -1,0 +1,33 @@
+div .presentation-component{
+    
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.presentation-component-video{
+    width: 240px;
+    height: 135px;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 480px) {
+    .presentation-component-video{
+        width: 360px;
+        height: 205px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .presentation-component-video{
+        width: 480px;
+        height: 270px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+}
+@media only screen and (min-width: 1200px) {
+    .presentation-component-video{
+        width: 560px;
+        height: 315px;
+    }
+}
