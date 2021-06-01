@@ -1,14 +1,33 @@
 div .presentation-component{
     
     width: 80%;
-    text-align: center;
+    text-align: justify;
     margin: auto;
+}
+
+.presentation-component-title{
+    text-align: center;
 }
 
 .presentation-component-video{
     width: 240px;
     height: 135px;
     border-radius: 10px;
+    display: grid;
+    margin: auto;
+    
+}
+
+.presentation-component-mision{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+}
+
+.presentation-component-mision-image{
+    display: grid;
+    width: 400px;
+    
 }
 
 @media only screen and (min-width: 480px) {

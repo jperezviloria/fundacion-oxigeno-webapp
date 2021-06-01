@@ -1,0 +1,61 @@
+.contacts-components{
+    text-align: center;
+
+}
+
+.contacts-components-images{
+    width: 50px;
+}
+
+
+.contacts-components-form{
+    justify-items: center;
+    width: 600px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: rgb(220, 234, 255) 2px 10px 10px 20px;
+    background-color: rgb(249, 248, 255);
+    margin: auto;
+    justify-items: center;
+
+}
+
+.contacts-components-inputs{
+    text-align: center;
+    width: 350px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 4px auto;
+    border: 2px solid rgb(177, 177, 184);
+    background-color: rgb(239, 239, 255);
+}
+
+.contacts-components-inputs-description{
+    text-align: center;
+    width: 350px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 4px auto;
+    border: 2px solid rgb(177, 177, 184);
+    background-color: rgb(239, 239, 255);
+}
+
+.contacts-components-list-countries{
+    
+    width: 350px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 4px auto;
+    border: 2px solid rgb(177, 177, 184);
+    background-color: rgb(239, 239, 255);
+}
+
+.contacts-components-button{
+    width: 250px;
+    padding: 5px;
+    margin: 4px auto;
+    border: 2px solid rgb(82, 81, 81);
+    border-radius: 6px;
+}
