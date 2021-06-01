@@ -1,0 +1,23 @@
+.footer-julioperez{
+    
+    display: grid;
+    justify-content: center;
+    background-color: #2f4f74;
+}
+
+.footer-julioperez-href{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-julioperez-all-images{
+    display: grid;
+    justify-content: center;
+    margin: 5px auto 50px;
+    grid-template-columns: repeat(4, 15%);
+}
+
+.footer-julioperez-images{
+    width: 30px;
+    
+}

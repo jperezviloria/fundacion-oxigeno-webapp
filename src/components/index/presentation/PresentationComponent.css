@@ -20,13 +20,14 @@ div .presentation-component{
 
 .presentation-component-mision{
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 0% 100%;
     align-items: center;
+    font-size: 14px;
 }
 
 .presentation-component-mision-image{
     display: grid;
-    width: 400px;
+    opacity: 0;
     
 }
 
@@ -41,6 +42,19 @@ div .presentation-component{
         width: 480px;
         height: 270px;
     }
+    .presentation-component-mision{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .presentation-component-mision-image{
+        opacity: 100%;
+        display: grid;
+        width: 300px;
+        
+    }
 }
 @media only screen and (min-width: 1024px) {
 }
@@ -48,5 +62,11 @@ div .presentation-component{
     .presentation-component-video{
         width: 560px;
         height: 315px;
+    }
+    .presentation-component-mision-image{
+        opacity: 100%;
+        display: grid;
+        width: 400px;
+        
     }
 }

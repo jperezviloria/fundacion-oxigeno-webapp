@@ -1,6 +1,8 @@
 import React from "react"
 
 import Header from "./components/common/header/HeaderComponent"
+import FooterComponent from "./components/common/footer/FooterComponent"
+
 import IndexPage from "./pages/index/IndexPage"
 import PaymentPage from "./pages/payment/PaymentPage"
 import EventPage from "./pages/events/EventsPage"
@@ -40,6 +42,7 @@ const App = () =>{
           <LoginPage/>
         </Route>
       </Switch>
+      <FooterComponent/>
     </Router>
       
       
