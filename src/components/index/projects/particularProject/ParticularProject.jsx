@@ -7,7 +7,8 @@ const ParticularProjectComponent = (props) =>{
         <div className="particular-project-component">
             <img 
             src={props.imageUrl}
-            className="particular-project-component-image"  />
+            className="particular-project-component-image"
+            alt="particular-project"  />
             <h3>{props.title}</h3>
             <p>{props.description}</p>
         </div>

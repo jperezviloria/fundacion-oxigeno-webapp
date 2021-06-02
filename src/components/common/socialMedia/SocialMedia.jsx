@@ -5,19 +5,24 @@ const SocialMediaComponent = ({style}) =>{
         <div>
             <img
             className={style} 
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"/>
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"
+            alt="facebook"/>
             <img
             className={style} 
-            src="https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-logotipo-de-icono-de-instagram-by-vexels.png"/>
+            src="https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-logotipo-de-icono-de-instagram-by-vexels.png"
+            alt="instagram"/>
             <img
             className={style} 
-            src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png"/>
+            src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png"
+            alt="twitter"/>
             <img 
             className={style}
-            src="https://images.vexels.com/media/users/3/137425/isolated/preview/f2ea1ded4d037633f687ee389a571086-logotipo-del-icono-de-youtube-by-vexels.png"/>
+            src="https://images.vexels.com/media/users/3/137425/isolated/preview/f2ea1ded4d037633f687ee389a571086-logotipo-del-icono-de-youtube-by-vexels.png"
+            alt="youtube"/>
             <img 
             className={style}
-            src="https://img.icons8.com/color/452/twitch--v1.png"/>
+            src="https://img.icons8.com/color/452/twitch--v1.png"
+            alt="twich"/>
         </div>
     )
 }

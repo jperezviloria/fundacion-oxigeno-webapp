@@ -1,0 +1,21 @@
+.particular-description-email{
+    display: grid;
+    grid-template-columns: repeat(2, 35%) repeat(2, 15%);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    width: 95%;
+    margin: auto;
+}
+
+.particular-description-email-info{
+
+
+}
+
+.particular-description-email-button{
+    font-size: 10px;
+    font-weight: 800;
+    width: 50px;
+    border-radius: 100px;
+}

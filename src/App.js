@@ -3,11 +3,14 @@ import React from "react"
 import Header from "./components/common/header/HeaderComponent"
 import FooterComponent from "./components/common/footer/FooterComponent"
 
-import IndexPage from "./pages/index/IndexPage"
-import PaymentPage from "./pages/payment/PaymentPage"
-import EventPage from "./pages/events/EventsPage"
-import TeamPage from "./pages/team/TeamPage"
-import LoginPage from "./pages/login/LoginPage"
+import IndexPage from "./pages/publics/index/IndexPage"
+import PaymentPage from "./pages/publics/payment/PaymentPage"
+import EventPage from "./pages/publics/events/EventsPage"
+import TeamPage from "./pages/publics/team/TeamPage"
+import LoginPage from "./pages/publics/login/LoginPage"
+
+import AdminPage from "./pages/privates/admin/AdminPage"
+
 
 import "./App.css"
 
@@ -15,10 +18,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  Redirect,
-  useHistory,
-  useLocation
+  // Link,
+  // Redirect,
+  // useHistory,
+  // useLocation
 } from "react-router-dom";
 
 const App = () =>{
@@ -40,6 +43,9 @@ const App = () =>{
         </Route>
         <Route path="/login">
           <LoginPage/>
+        </Route>
+        <Route path="/admin/secure/dashboard">
+          <AdminPage/>
         </Route>
       </Switch>
       <FooterComponent/>
