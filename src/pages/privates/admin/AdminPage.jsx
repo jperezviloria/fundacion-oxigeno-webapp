@@ -1,7 +1,7 @@
 import React from "react"
 
 import EmailListComponent from "../../../components/privates/emailList/EmailListComponent"
-
+import ProfileAdminComponent from "../../../components/privates/profileAdmin/ProfileAdminComponent"
 
 import "./AdminPage.css"
 
@@ -13,6 +13,7 @@ const AdminPage = () =>{
                     <EmailListComponent/>
                 </div>
                 <div className="cuadro2">
+                    <ProfileAdminComponent/>
                 </div>
                 <div className="cuadro3">
                 </div>
