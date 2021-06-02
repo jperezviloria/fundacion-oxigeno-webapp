@@ -1,0 +1,20 @@
+.update-social-media{
+    text-align: center ;
+    display: grid;
+    
+}
+
+.update-social-media-all-bottons{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    
+}
+
+.update-social-media-botton{
+    width: 200px;
+    margin: 4px;
+    padding: 6px;
+    border:2px solid orange;
+    border-radius: 10px;
+}

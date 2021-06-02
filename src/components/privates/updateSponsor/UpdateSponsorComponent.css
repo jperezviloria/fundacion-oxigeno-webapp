@@ -1,0 +1,20 @@
+.update-sponsor-component{
+    text-align: center ;
+    display: grid;
+    
+}
+
+.update-sponsor-component-all-bottons{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    
+}
+
+.update-sponsor-component-botton{
+    width: 200px;
+    margin: 4px;
+    padding: 6px;
+    border:2px solid orange;
+    border-radius: 10px;
+}

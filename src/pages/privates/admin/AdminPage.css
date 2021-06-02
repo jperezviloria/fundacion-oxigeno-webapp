@@ -1,32 +1,40 @@
 .cuadro0{
     padding-top: 50px;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 45%);
+    justify-content: space-evenly;
 }
 
 .cuadro1{
     height: 500px;
-    border: 2px solid blue;
-    overflow: auto;
+    border: 3px solid green;
+    border-radius: 20px;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    
 }
 
 .cuadro2{
     height: 500px;
-    border: 2px solid blue;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .cuadro3{
     height: 400px;
-    border: 2px solid blue;
+    
 }
 
 .cuadro4{
     height: 400px;
-    border: 2px solid blue;
+    
 }
 
 .cuadro5{
     height: 400px;
-    border: 2px solid blue;
+    border: 4px solid rgb(8, 8, 70);
+    border-radius: 20px;
+    text-align: center;
+
     
 }

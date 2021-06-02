@@ -7,7 +7,7 @@ import "./EmailListComponent.css"
 
 const EmailListComponent = () =>{
     return (
-        <div>
+        <div className="email-list">
             <form action="" className="email-list-filters">
                 <button
                 className="email-list-filters-botton">Pendientes</button>

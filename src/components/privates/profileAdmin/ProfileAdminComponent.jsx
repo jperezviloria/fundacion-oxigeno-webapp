@@ -4,13 +4,16 @@ import "./ProfileAdminComponent.css"
 
 const ProfileAdminComponent = () =>{
     return (
-        <div>
-            <img src="https://i.imgur.com/Ah3Dyh9.png" alt="" />
-            <p>Julio Perez</p>
+        <div className="profile-admin-component">
+            <h2>Hola Julio Perez</h2>
+            <img 
+            src="https://i.imgur.com/Ah3Dyh9.png"
+            className="profile-admin-component-image" 
+            alt="" />
             <p>perezjulioernesto@gmail.com</p>
-            <form action="">
-                <button>modificar datos</button>
-            </form>
+            <button
+            type="button"
+            className="profile-admin-component-button">modificar datos</button>
         </div>
     )
 }
