@@ -20,7 +20,7 @@ import TeamPage from "./pages/publics/team/TeamPage"
 import LoginPage from "./pages/publics/login/LoginPage"
 
 import AdminPage from "./pages/privates/admin/AdminPage"
-
+import UserFactory from "./pages/privates/userFactory/UserFactory"
 
 import UserAuthContext from "./context/userAuth/UserAuthContext"
 import UserAuthState from "./context/userAuth/UserAuthState"
@@ -68,6 +68,7 @@ const App = () =>{
           <AdminPage/>
         </Route>
         <PrivatesRoutes exact path ="/admin/secure/dashboard" component={AdminPage} />
+        <PrivatesRoutes exact path ="/admin/secure/factory" component={UserFactory} />
       </Switch>
       <FooterComponent/>
       </UserAuthState>
