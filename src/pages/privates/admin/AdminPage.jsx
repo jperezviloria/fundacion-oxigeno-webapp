@@ -1,13 +1,24 @@
-import React from "react"
+import React, {useContext, useEffect} from "react"
 
 import EmailListComponent from "../../../components/privates/emailList/EmailListComponent"
 import ProfileAdminComponent from "../../../components/privates/profileAdmin/ProfileAdminComponent"
 import UpdateEventComponent from "../../../components/privates/updateSponsor/UpdateSponsorComponent"
 import UpdateSocialMediaComponent from "../../../components/privates/updateSocialMedia/UpdateSocialMediaComponent"
 
+
+import UserAuthContext from "../../../context/userAuth/UserAuthContext"
+
 import "./AdminPage.css"
 
 const AdminPage = () =>{
+
+    const {isAuthenticated} = useContext(UserAuthContext)
+
+
+    useEffect(() =>{
+
+    }, [isAuthenticated])
+
     return (
         <div >
             <div className="cuadro0">
