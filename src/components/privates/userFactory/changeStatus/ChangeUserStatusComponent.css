@@ -1,0 +1,18 @@
+.change-user-status{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.change-user-status-particular{
+    width: 400px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin: 20px auto;
+    border: 2px solid rgb(10, 10, 47);
+    background-color: rgb(72, 94, 155);
+    color: rgb(234, 242, 255);
+    font-weight: 800;
+    border-radius: 30px;
+    padding: 4px;
+}

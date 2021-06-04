@@ -1,0 +1,21 @@
+.user-factory{
+    width: 500px;
+    padding: 100px 0;
+    display: grid;
+    margin: 0 auto;
+      
+}
+
+.user-factory-input{
+    justify-self: center;
+    margin: 3px ;
+    padding: 4px;
+}
+
+.user-factory-button{
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    justify-self: center;
+}
