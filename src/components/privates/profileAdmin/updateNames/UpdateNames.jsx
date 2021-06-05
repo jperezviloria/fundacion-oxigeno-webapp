@@ -53,7 +53,7 @@ const UpdateNames = ({idUser,setModifyInfo, name, surname}) =>{
             <input 
             {...register("surname")} 
             type="text" 
-            //value={surname}
+            value={}
             placeholder="apellido" />
             {/* <p>{personalInformation.email}</p> */}
             <button
