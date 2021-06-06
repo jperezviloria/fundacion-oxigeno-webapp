@@ -1,6 +1,17 @@
-.particular-description-email{
+.particular-description-email-true{
     display: grid;
     grid-template-columns: repeat(2, 35%) repeat(2, 15%);
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(171, 223, 171);
+    border-radius: 40px;
+    width: 95%;
+    margin: auto;
+}
+.particular-description-email-false{
+    display: grid;
+    grid-template-columns: repeat(2, 35%) repeat(2, 15%);
+    background-color: rgb(246, 195, 195);
     text-align: center;
     border: 1px solid black;
     border-radius: 40px;

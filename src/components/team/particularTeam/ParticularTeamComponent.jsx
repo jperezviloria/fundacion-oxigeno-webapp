@@ -1,18 +1,36 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
+import HttpClient from "../../../service/axios"
 
 import "./ParticularTeamComponent.css"
 
 const ParticularTeamComponent = () =>{
 
+    const [team, setTeam] = useState([])
+
+    const getUserWhenHaveTrue = async() =>{
+        await HttpClient.get(`http://localhost:5000/public/user/getall`)
+        .then((response) =>{
+            console.log(response)
+            setTeam(response.data.data)
+
+        })
+    }
+
+    useEffect(() =>{
+        getUserWhenHaveTrue()
+    },[])
     return (
-        <div className="particular-team-component">
+        team.map((particular) =>(
+            <div className="particular-team-component">
             <img 
             className="particular-team-component-image"
-            src="https://i.imgur.com/Ah3Dyh9.png" 
+            src={particular.urlimage} 
             alt="particular-profile"/>
-            <h3>Julio Perez</h3>
-            <p>Software Developer</p>
+            <h3>{particular.name}</h3>
+            
         </div>
+        ))
+        
     )
 
 }
