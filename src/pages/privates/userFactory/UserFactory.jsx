@@ -1,76 +1,49 @@
-import React from "react"
+import React,{useState} from "react"
 import Swal from "sweetalert2"
 import {useForm} from "react-hook-form"
-import axios from "axios"
 import HttpClient from "../../../service/axios"
+
+import CreateUserComponent from "../../../components/privates/userFactory/createUser/CreateUserComponent"
+import ChangeUserStatusComponent from "../../../components/privates/userFactory/changeStatus/ChangeUserStatusComponent"
+import DeleteUserComponent from "../../../components/privates/userFactory/deleteStatus/DeleteUserComponent"
+
+
+import "./UserFactory.css"
 
 const UserFactory = () =>{
 
-    const {register, handleSubmit} = useForm()
+   
 
+    const [selectionUserFactory, setSelectionUserFactory] = useState(null)
 
-    const onSubmitGenerateUser = async (data) => {
-    
-        if(!data.emailUser){
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Email is require',
-                footer: '<a href>Why do I have this issue?</a>'
-              })
-                
-              }
-         else if (!data.passwordUser){
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Password is require',
-                footer: '<a href>Why do I have this issue?</a>'
-              })
-            }
-        else if (!data.idRol){
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'The Rol is require',
-                footer: '<a href>Why do I have this issue?</a>'
-                })
-            }
-        else if(data.emailUser && data.passwordUser && data.idRol ){
-            const newUser = {
-                emailUser: data.emailUser,
-                passwordUser: data.passwordUser,
-                idRol: parseInt(data.idRol)
-            }
-            console.log(newUser)
-            // await axios.post(`http://localhost:5000/private-auth/signup`, newUser)
-            // .then(response =>{
-            //     console.log(response)
-            // })
-            const token = localStorage.getItem("token")
-            console.log(token)
-            await HttpClient.post(`http://localhost:5000/private-auth/signup`, newUser)
-            .then(response =>{
-                console.log(response)
-            })
-        }
-        
+    const selectedCreateComponent = () =>{
+        setSelectionUserFactory(<CreateUserComponent/>)
     }
 
+    const selectedUpdateComponent = () =>{
+        setSelectionUserFactory(<ChangeUserStatusComponent/>)
+    }
+
+    const selectedDeleteComponent = () =>{
+        setSelectionUserFactory(<DeleteUserComponent/>)
+    }
 
     return (
-        <form action="" onSubmit={handleSubmit(onSubmitGenerateUser)}>
-            <input 
-            {...register("emailUser")} 
-            type="text" />
-            <input 
-            {...register("passwordUser")} 
-            type="text" />
-            <input 
-            {...register("idRol")} 
-            type="text" />
-            <button>CREAR</button>
-        </form>
+        <div>
+
+        <div className="filter-factory">
+            <button 
+            className="filter-factory-botton"
+            onClick={selectedCreateComponent}>Crear</button>
+            <button 
+            className="filter-factory-botton"
+            onClick={selectedUpdateComponent}>Cambiar</button>
+            <button 
+            className="filter-factory-botton"
+            onClick={selectedDeleteComponent}>Eliminar</button>
+        </div>
+        {selectionUserFactory}
+        </div>
     )
 }
 
