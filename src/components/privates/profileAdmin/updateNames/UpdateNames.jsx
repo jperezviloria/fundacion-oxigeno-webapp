@@ -5,7 +5,7 @@ import HttpClient from "../../../../service/axios"
 import UploadProfileImage from "../uploadProfileImage/UploadProfileImage"
 import "./UpdateNames.css"
 
-const UpdateNames = ({idUser,setModifyInfo, name, surname}) =>{ 
+const UpdateNames = ({idUser,setModifyInfo, name, surname, setUploadImage}) =>{ 
 
 
     const {register, handleSubmit} = useForm()
@@ -21,7 +21,7 @@ const UpdateNames = ({idUser,setModifyInfo, name, surname}) =>{
         }
         console.log(userUpdated)
         await updateNameAndSurnameById(userUpdated)
-        // setQuery(true)
+        //setQuery(true)
     }
 
     const updateNameAndSurnameById = async(userUpdated) =>{
@@ -46,16 +46,12 @@ const UpdateNames = ({idUser,setModifyInfo, name, surname}) =>{
             <h2>Modificar datos</h2>
             <input 
             {...register("name")} 
-            type="text" 
-            //value={name}
-            onChange={(e) =>console.log(e)}
+            type="text"             
             placeholder="nombre" />
             <input 
             {...register("surname")} 
-            type="text" 
-            value={}
+            type="text"     
             placeholder="apellido" />
-            {/* <p>{personalInformation.email}</p> */}
             <button
             type="submit"
             className="profile-admin-component-button"
@@ -63,7 +59,8 @@ const UpdateNames = ({idUser,setModifyInfo, name, surname}) =>{
         </form>
     :<UploadProfileImage 
     idUser = {idUser}
-    setModifyInfo = {setModifyInfo}/>
+    setModifyInfo = {setModifyInfo}
+    setUploadImage={setUploadImage}/>
     )
 }
 

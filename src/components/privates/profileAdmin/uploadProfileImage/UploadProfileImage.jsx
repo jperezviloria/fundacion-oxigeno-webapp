@@ -2,9 +2,10 @@ import React, {useState, useCallback} from "react"
 import {useDropzone} from 'react-dropzone'
 import HttpClient from "../../../../service/axios"
 import {Redirect} from "react-router-dom"
+import ProfileAdminComponent from "../ProfileAdminComponent"
 import "./UploadProfileImage.css"
 
-const UploadProfileImage = ({idUser, setModifyInfo}) =>{ 
+const UploadProfileImage = ({idUser, setModifyInfo, setUploadImage}) =>{ 
 
     const [query, setQuery] = useState(false)
 
@@ -13,14 +14,22 @@ const UploadProfileImage = ({idUser, setModifyInfo}) =>{
         console.log("SUBIDO")
     }
 
-    const onDrop = useCallback(acceptedFiles => {
+
+    const pauseComp = (millis) =>{
+        var date = new Date();
+        var curDate = null;
+        do { curDate = new Date(); }
+        while(curDate-date < millis);
+    }
+
+    const onDrop = useCallback( async acceptedFiles => {
         const file = acceptedFiles[0];
         console.log(file);
     
         const formData = new FormData();
         formData.append("image", file);
 
-        HttpClient.post(`http://localhost:5000/user/update/upload-image/${idUser}`,formData,
+        await HttpClient.post(`http://localhost:5000/user/update/upload-image/${idUser}`,formData,
         {
             headers:{
               "Content-Type":"multipart/form-data"
@@ -28,11 +37,17 @@ const UploadProfileImage = ({idUser, setModifyInfo}) =>{
         })
         .then(() => {
             console.log("file uploaded succesfully")
+            
+            // setModifyInfo(false)
+            setUploadImage(true)
+            //pauseComp(2000)
             setModifyInfo(false)
+            setQuery(true)
+            
             }).catch(err => {
             console.log(err);
         });
-
+        
 
       }, [])
 

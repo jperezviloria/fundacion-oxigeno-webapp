@@ -1,10 +1,11 @@
 import React from "react"
 
 
-const ListOfCountries = ({style}) =>{
+const ListOfCountries = ({style, register}) =>{
     return (
         <select 
-        className={style}>
+        className={style}
+        {...register("country")} >
             <option value="Elegir" id="AF">
                 País
             </option>

@@ -41,9 +41,9 @@ const ProfileAdminComponent = () =>{
         })
     } 
     
-    useEffect(() =>{
-        gettingInformationFromLocalStorage()
-    },[])
+    useEffect(async() =>{
+        await gettingInformationFromLocalStorage()
+    },[uploadImage])
 
     return (
         !modifyInfo
@@ -59,7 +59,8 @@ const ProfileAdminComponent = () =>{
         idUser={personalInformation.id}
         setModifyInfo={setModifyInfo}
         name={personalInformation.name}
-        surname={personalInformation.surname}/>
+        surname={personalInformation.surname}
+        setUploadImage={setUploadImage}/>
         // ?<div className="profile-admin-component">
         //     <h2>Hola {personalInformation.name} {personalInformation.surname}</h2>
         //     <img 
