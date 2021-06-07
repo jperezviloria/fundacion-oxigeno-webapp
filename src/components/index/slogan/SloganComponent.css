@@ -23,6 +23,10 @@ div .slogan-component{
   width: 30px;
 }
 
+.slogan-component-title{
+  width: 70%;
+  font-size: 40px;
+}
 
 @media only screen and (min-width: 480px) {
 }

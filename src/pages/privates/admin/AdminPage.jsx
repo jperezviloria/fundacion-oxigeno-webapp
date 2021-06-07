@@ -28,12 +28,12 @@ const AdminPage = () =>{
                 <div className="cuadro2">
                     <ProfileAdminComponent/>
                 </div>
-                <div className="cuadro3">
+                {/* <div className="cuadro3">
                     <UpdateEventComponent/>
                 </div>
                 <div className="cuadro4">
                     <UpdateSocialMediaComponent/>
-                </div>
+                </div> */}
             </div>
             <div>
                 <div className="cuadro5">

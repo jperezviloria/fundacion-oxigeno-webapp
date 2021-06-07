@@ -12,6 +12,7 @@
 .particular-team-component-image{
     margin-top: 20px;
     width: 150px;
+    height: 150px;
     border: 10px solid rgb(149, 149, 251);
     border-radius: 1000px;
 }
