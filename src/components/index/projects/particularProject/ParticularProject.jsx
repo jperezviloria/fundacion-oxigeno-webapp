@@ -9,8 +9,10 @@ const ParticularProjectComponent = (props) =>{
             src={props.imageUrl}
             className="particular-project-component-image"
             alt="particular-project"  />
+            <div>
             <h3>{props.title}</h3>
             <p>{props.description}</p>
+            </div>
         </div>
     )
 }

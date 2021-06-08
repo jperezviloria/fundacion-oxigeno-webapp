@@ -1,0 +1,25 @@
+.sponsor-component{
+    width: 950px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin: 70px auto;
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+.sponsor-component-image{
+    border: 2px solid rgb(234, 237, 248);
+    box-shadow: rgb(150, 177, 199) 10px 10px 30px;
+    background-color: rgb(240, 248, 255);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-items: center;
+}
+
+.sponsor-component-image-particular{
+    width: 70px;
+    height: 70px;
+}

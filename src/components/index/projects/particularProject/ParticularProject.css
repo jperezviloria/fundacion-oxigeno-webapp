@@ -1,11 +1,13 @@
 .particular-project-component{
     
-    border: 2px solid rgb(3, 26, 56);
-    border-radius: 40px;
+    /* border: 2px solid rgb(3, 26, 56); */
+    box-shadow: rgb(154, 172, 195) 20px 10px 20px;
+    border-radius: 10px;
     background: linear-gradient(to bottom, rgb(72, 114, 251), rgb(155, 198, 255));
     color: rgb(2, 5, 17);
     width: 200px;
     display: grid;
+    grid-template-columns: repeat(2,50%);
     justify-items: center;
     text-align: center;
     margin: 50px auto;
@@ -15,7 +17,7 @@
 
 .particular-project-component-image{
     margin-top: 40px;
-    border-radius: 20px;
+    /* border-radius: 10px; */
     width: 150px;
 }
 
@@ -33,10 +35,12 @@
 }
 @media only screen and (min-width: 1200px) {
     .particular-project-component{
-        width: 500px;
+        width: 1000px;
+        height: 400px;
     }
 
     .particular-project-component-image{
-        width: 300px;
+        width: 400px;
+        height: 300px;
     }
 }
