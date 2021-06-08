@@ -9,8 +9,7 @@ const TeamPage = () =>{
     return (
         <div className="team-page">
             <ParticularTeamComponent/>
-            <ParticularTeamComponent/>
-            <ParticularTeamComponent/>
+           
         </div>
     )
 

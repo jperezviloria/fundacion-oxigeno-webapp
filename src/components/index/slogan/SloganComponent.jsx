@@ -9,7 +9,7 @@ import "./SloganComponent.css"
 const SloganComponent = () =>{
     return (
         <div className="slogan-component">
-            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+            <h1 className="slogan-component-title">Fundación oxígeno trabaja por los derechos de los niños, niñas y adolescentes</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error aspernatur deleniti in.</p>
             <Link className="slogan-component-link" to="/donar">DONAR</Link>
             <SocialMediaComponent 

@@ -17,6 +17,10 @@ const FooterComponent = () =>{
                 alt="protobot" />
                 <img
                 className="footer-julioperez-images" 
+                src="https://img2.freepng.es/20180601/ls/kisspng-linkedin-computer-icons-youtube-social-media-5b117d32a9d795.2147815715278728186957.jpg" 
+                alt="github-protobot"/>
+                <img
+                className="footer-julioperez-images" 
                 src="https://www.pngitem.com/pimgs/m/254-2545120_gray-github-icon-png-transparent-png.png" 
                 alt="github-protobot"/>
                 <img

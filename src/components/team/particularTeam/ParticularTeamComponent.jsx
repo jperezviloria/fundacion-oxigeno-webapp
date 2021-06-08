@@ -12,7 +12,6 @@ const ParticularTeamComponent = () =>{
         .then((response) =>{
             console.log(response)
             setTeam(response.data.data)
-
         })
     }
 
@@ -26,7 +25,7 @@ const ParticularTeamComponent = () =>{
             className="particular-team-component-image"
             src={particular.urlimage} 
             alt="particular-profile"/>
-            <h3>{particular.name}</h3>
+            <h3>{particular.name} {particular.surname}</h3>
             
         </div>
         ))

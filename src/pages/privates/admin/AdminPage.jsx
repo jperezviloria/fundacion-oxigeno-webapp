@@ -2,8 +2,9 @@ import React, {useContext, useEffect, useState} from "react"
 
 import EmailListComponent from "../../../components/privates/emailList/EmailListComponent"
 import ProfileAdminComponent from "../../../components/privates/profileAdmin/ProfileAdminComponent"
-import UpdateEventComponent from "../../../components/privates/updateSponsor/UpdateSponsorComponent"
-import UpdateSocialMediaComponent from "../../../components/privates/updateSocialMedia/UpdateSocialMediaComponent"
+import EventComponent from "../../../components/privates/updateEvent/UpdateEventComponent"
+//import UpdateEventComponent from "../../../components/privates/updateSponsor/UpdateSponsorComponent"
+//import UpdateSocialMediaComponent from "../../../components/privates/updateSocialMedia/UpdateSocialMediaComponent"
 
 
 import UserAuthContext from "../../../context/userAuth/UserAuthContext"
@@ -28,16 +29,16 @@ const AdminPage = () =>{
                 <div className="cuadro2">
                     <ProfileAdminComponent/>
                 </div>
-                <div className="cuadro3">
+                {/* <div className="cuadro3">
                     <UpdateEventComponent/>
                 </div>
                 <div className="cuadro4">
                     <UpdateSocialMediaComponent/>
-                </div>
+                </div> */}
             </div>
             <div>
                 <div className="cuadro5">
-                    <h1>Administrar Eventos</h1>
+                    <EventComponent/>
                 </div>
             </div>
         </div>

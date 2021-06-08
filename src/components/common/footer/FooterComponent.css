@@ -14,7 +14,7 @@
     display: grid;
     justify-content: center;
     margin: 5px auto 50px;
-    grid-template-columns: repeat(4, 15%);
+    grid-template-columns: repeat(5, 15%);
 }
 
 .footer-julioperez-images{
