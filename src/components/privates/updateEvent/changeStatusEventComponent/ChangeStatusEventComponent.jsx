@@ -3,6 +3,7 @@ import HttpClient from "../../../../service/axios"
 import Swal from "sweetalert2"
 import moment from "moment"
 
+import "./ChangeStatusEventComponent.css"
 
 const ChangeStatusEventComponent = ({setChield}) =>{
 
@@ -58,14 +59,18 @@ const ChangeStatusEventComponent = ({setChield}) =>{
 
 
     return (
-        events.map(particularEvent => (
-            <div>
+        <div className="update-management-chield">
+            {events.map(particularEvent => (
+            <div className="change-status-event-component">
                 <img src={gettingImage(particularEvent.imageurl)} alt="" />
                 <p>{particularEvent.title}</p>
                 <p>{moment(particularEvent.dates).format("DD/MM/YYYY")}</p>
-                <button onClick={() => changeStatusParticularEvent(particularEvent.id)}>Activar</button>
+                <button 
+                className="change-status-event-component-button"
+                onClick={() => changeStatusParticularEvent(particularEvent.id)}>Activar</button>
             </div>
-        ))
+        ))}
+        </div>
     )
 }
 
