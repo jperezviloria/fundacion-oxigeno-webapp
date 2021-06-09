@@ -3,6 +3,7 @@ import HttpClient from "../../../../service/axios"
 import moment from "moment"
 import Swal from "sweetalert2"
 
+import "./DeleteEventComponent.css"
 
 const DeleteEventComponent = () =>{
 
@@ -57,14 +58,21 @@ const DeleteEventComponent = () =>{
     },[query])
 
     return (
-        events.map(particularEvent => (
-            <div>
-                <img src={gettingImage(particularEvent.imageurl)} alt="" />
+        <div className="update-management-chield">
+            {events.map(particularEvent => (
+            <div className="delete-event-component">
+                <img 
+                className="delete-event-component-image"
+                src={gettingImage(particularEvent.imageurl)} 
+                alt="" />
                 <p>{particularEvent.title}</p>
                 <p>{moment(particularEvent.dates).format("DD/MM/YYYY")}</p>
-                <button onClick={() => deleteParticularEvent(particularEvent.id)}>eliminar</button>
+                <button 
+                className="delete-event-component-button"
+                onClick={() => deleteParticularEvent(particularEvent.id)}>eliminar</button>
             </div>
-        ))
+        ))}
+        </div>
     )
 }
 
