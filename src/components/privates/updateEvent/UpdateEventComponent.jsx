@@ -3,6 +3,7 @@ import React, {useState} from "react"
 import CreateEventComponent from "./createEventComponent/CreateEventComponent"
 import DeleteEventComponent from "./deleteEventComponent/DeleteEventComponent"
 import ChangeStatusComponent from './changeStatusEventComponent/ChangeStatusEventComponent'
+import YoutubeLinksComponent from "./youtubeLinksComponent/YoutubeLinksComponent"
 
 import "./UpdateEventComponent.css"
 
@@ -15,17 +16,17 @@ const UpdateEventComponent = () =>{
 
     const implementCreate = () =>{
         setQuery(true)
-        return setChield(<CreateEventComponent setChield={setChield}/>)
+        return setChield(<CreateEventComponent className="update-management-chield" setChield={setChield}/>)
     }
 
     const implementDelete = () =>{
         setQuery(true)
-        return setChield(<DeleteEventComponent/>)
+        return setChield(<DeleteEventComponent />)
     }
 
     const implementChangeStatus = () =>{
         setQuery(true)
-        return setChield(<ChangeStatusComponent setChield={setChield}/>)
+        return setChield(<ChangeStatusComponent className="update-management-chield" setChield={setChield}/>)
     }
     const implementUpdateTitle = () =>{
         setQuery(true)
@@ -34,7 +35,7 @@ const UpdateEventComponent = () =>{
 
     const implementYoutubeLinks = () =>{
         setQuery(true)
-        return setChield(<h1>youtube</h1>)
+        return setChield(<YoutubeLinksComponent className="update-management-chield" />)
     }
 
 
