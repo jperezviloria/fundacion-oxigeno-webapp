@@ -2,7 +2,8 @@ import React, {useState, useEffect} from "react"
 import HttpClient from "../../../../service/axios"
 import Swal from "sweetalert2"
 import moment from "moment"
-
+import ButtonAddYoutubeLink from "./modalAddYoutubeLink/ButtonAddYoutubeLink"
+import ButtonToModifyYoutubeLink from "./modalModifyYoutubeLink/ButtonToModifyYoutubeLink"
 import "./YoutubeLinksComponent.css"
 
 
@@ -85,12 +86,20 @@ const YoutubeLinksComponent = () =>{
                 <img src={gettingImage(particularEvent.imageurl)} alt="" />
                 <p>{particularEvent.title}</p>
                 <p>{moment(particularEvent.dates).format("DD/MM/YYYY")}</p>
-                <button 
+                {/* <button 
                 className="youtube-links-event-component-button"
                 onClick={() => addYoutubeLink(particularEvent.id)}>🟢</button>
                 <button 
                 className="youtube-links-event-component-button"
-                onClick={() => modifyYoutubeLink(particularEvent.id)}>🟡</button>
+                onClick={() => modifyYoutubeLink(particularEvent.id)}>🟡</button> */}
+                <ButtonAddYoutubeLink
+                message="agregar"
+                internalMessage="agregar links de youtube"
+                id={particularEvent.id}/>
+                <ButtonToModifyYoutubeLink
+                message="modificar"
+                internalMessage="modificar links de youtube"
+                id={particularEvent.id}/>
             </div>
         ))}
         </div>
