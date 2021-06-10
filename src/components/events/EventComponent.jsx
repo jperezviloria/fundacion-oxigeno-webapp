@@ -1,6 +1,13 @@
-import React from "react"
+import React, {useEffect, useState} from "react"
+import HttpClient from "../../service/axios"
 
 const EventComponent = () =>{
+
+    const gettingEventData = async() =>{
+        await HttpClient.get(``)
+    }
+
+
     return (
         <div>
             <h1>EVENTO 1</h1>
