@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
-import styled from "styled-components";
 
-import Modal from './ModalAddYoutubeLink'
-import {Boton} from "./ButtonAddStyle"
+
+import Modal from './ModalSmallYoutubeLink'
+import {Boton} from "./ButtonSmallYoutubeStyle"
 
 
 
 
 const Button = ({id, message, internalMessage}) => {
-  
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {
@@ -19,6 +18,9 @@ const Button = ({id, message, internalMessage}) => {
     setShowModal(false);
   }
 
+
+  
+  
   return (
     <div>
       <Boton type="submit"  onClick={openModal}  >{message}</Boton>

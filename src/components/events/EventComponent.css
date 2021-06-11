@@ -1,0 +1,35 @@
+
+.event-component{
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.event-component-image{
+    margin: auto;
+    width: 500px;
+}
+
+.event-component-base-videos{
+    display: grid;
+    justify-self: center;
+    width: 80%;
+}
+
+/* ----------------------------------------------------- */
+.not-event-component{
+
+}
+
+.not-event-component-image{
+    
+}
+
+.not-event-component-base-videos{
+    
+}
+
+
+
+.not-youtube-link-component-particular{
+    width: 500px;
+}
