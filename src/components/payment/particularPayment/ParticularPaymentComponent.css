@@ -3,7 +3,7 @@
     margin: auto;
     border: 5px solid rgb(103, 103, 238);
     border-radius: 50px;
-    width: 500px;
+    width: 170px;
     
 }
 
@@ -14,7 +14,7 @@
 }
 
 .particular-payment-input{
-    width: 200px;
+    width: 120px;
     padding: 10px;
     border-radius: 10px;
     border: 2px solid rgb(43, 43, 65);
@@ -30,4 +30,37 @@
     border: 2px solid black;
     border-radius: 4px;
     background-color: blanchedalmond;
+}
+
+
+@media only screen and (min-width: 480px) {
+    .particular-payment{
+        width: 300px;  
+    }
+
+
+    .particular-payment-input{
+        width: 200px;
+    }
+
+    .particular-payment-button{ 
+        width: 100px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .particular-payment{
+        width: 500px;  
+    }
+
+    .particular-payment-input{
+        width: 250px;
+    }
+
+    .particular-payment-button{ 
+        width: 130px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+}
+@media only screen and (min-width: 1200px) {   
 }

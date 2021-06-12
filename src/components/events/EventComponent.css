@@ -1,35 +1,132 @@
 
 .event-component{
-    border: 2px solid black;
-    margin: 10px;
+    width: 270px;
+    border: 6px solid blue;
+    border-radius: 10px;
+    display: grid;
+    margin: 10px auto;
+    margin-top: 100px;
+    justify-items: center;
+}
+
+.event-component-titles{
+    width: 260px;
+    font-size: 24px;
+    font-weight: 800;
+
+    
 }
 
 .event-component-image{
-    margin: auto;
-    width: 500px;
+    margin: 20px auto;
+    width: 250px;
+    border: 6px solid rgb(32, 193, 199);
+    border-radius: 10px;
+    height: 160px;
+}
+
+.event-component-description{
+    width: 250px;
+}
+
+.event-component-base-videos{
+    display: grid;
+    justify-items: center;
+}
+
+@media only screen and (min-width: 480px) {
+
+.event-component{
+    width: 350px;
+}
+.event-component-image{
+    width: 300px;
+    height: 190px;
+}
+.event-component-description{
+    width: 320px;
+}
+
+
+}
+@media only screen and (min-width: 768px) {
+    .event-component{
+        width: 600px;
+    }
+    .event-component-titles{
+        width: 460px;
+        font-size: 30px;   
+    }
+    .event-component-image{
+        width: 550px;
+        height: 200px;
+    }
+    .event-component-description{
+        width: 460px;
+    }
+    
+}
+@media only screen and (min-width: 1024px) {
+    .event-component{
+        width: 800px;
+    }
+    .event-component-titles{
+        width: 660px;  
+    }
+    .event-component-image{
+        width: 700px;
+        height: 250px;
+    }
+    .event-component-description{
+        width: 560px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .event-component{
+        width: 1200px;
+    }
+    .event-component-titles{
+        width: 700px;  
+    }
+    .event-component-image{
+        width: 850px;
+        height: 350px;
+    }
+    .event-component-description{
+        width: 760px;
+    }
+/* .event-component{
+    width: 1200px;
+    border: 6px solid blue;
+    border-radius: 10px;
+    display: grid;
+    margin: 10px auto;
+    margin-top: 100px;
+    
+}
+
+.event-component-titles{
+    font-size: 24px;
+    font-weight: 800;
+
+    
+}
+
+.event-component-image{
+    margin: 20px auto;
+    width: 1100px;
+    border: 6px solid rgb(32, 193, 199);
+    border-radius: 10px;
+    height: 350px;
+}
+
+.event-component-description{
+    width: 550px;
 }
 
 .event-component-base-videos{
     display: grid;
     justify-self: center;
     width: 80%;
-}
-
-/* ----------------------------------------------------- */
-.not-event-component{
-
-}
-
-.not-event-component-image{
-    
-}
-
-.not-event-component-base-videos{
-    
-}
-
-
-
-.not-youtube-link-component-particular{
-    width: 500px;
+} */
 }
