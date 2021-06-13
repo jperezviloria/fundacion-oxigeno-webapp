@@ -54,28 +54,20 @@ const EventComponent = () =>{
 
     return (
         events.map((particular, indexEvent) =>(
-            <div className={decideMainEvent(indexEvent)}>
-                <img src={particular.imageurl} alt="" className={decideMainEvent(indexEvent)+"-image"}/>
-                <h1>{particular.title}</h1>
-                <h3>{moment(particular.dates).format("DD-MM-YYYY")}</h3>
-                <p>{particular.description}</p>
-                <ul className={decideMainEvent(indexEvent)+"-base-videos"}>
+            // <div className={decideMainEvent(indexEvent)}>
+            <div className="event-component">
+                <div className="event-component-titles">
+                <p>{particular.title}</p>
+                <p>{moment(particular.dates).format("DD-MM-YYYY")}</p>
+                </div>
+                <img src={particular.imageurl} alt="" className="event-component-image"/>
+                <p className="event-component-description">{particular.description}</p>
+                {/* <ul className={decideMainEvent(indexEvent)+"-base-videos"}> */}
+                <div className="event-component-base-videos">
                     {(particular.youtubeLink).map((particularYoutubeLink, indexYoutubeLink) =>(
                         decideMainYoutubeLink2(indexEvent, indexYoutubeLink, particularYoutubeLink)
-                        // <>
-                        
-                        // <p className={decideMainYoutubeLink(indexEvent, indexYoutubeLink)+"-title"}>
-                        //     {particularYoutubeLink.name}
-                        // </p>
-                        // {/* <iframe className="presentation-component-video" src={particularYoutubeLink.link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen play ></iframe> */}
-                        // {/* <iframe width="420" height="315" src={particularYoutubeLink.link} frameborder="0"></iframe> */}
-                        // <iframe className={decideMainYoutubeLink(indexEvent, indexYoutubeLink)+"-particular"} width="560" height="315" src={particularYoutubeLink.link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        
-                        
-                        
-                        // </>
                     ))}
-                </ul>
+                </div>
 
             </div>
         ))
