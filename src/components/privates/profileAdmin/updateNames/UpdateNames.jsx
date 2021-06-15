@@ -41,7 +41,7 @@ const UpdateNames = ({idUser,setModifyInfo, name, surname, setUploadImage}) =>{
     return (
         !query 
         ?<form 
-        className="profile-admin-component" 
+        className="profile-admin-update-names-component" 
         onSubmit={handleSubmit(changeInformacion)}>
             <h2>Modificar datos</h2>
             <input 
@@ -54,7 +54,7 @@ const UpdateNames = ({idUser,setModifyInfo, name, surname, setUploadImage}) =>{
             placeholder="apellido" />
             <button
             type="submit"
-            className="profile-admin-component-button"
+            className="profile-admin-update-names-component-button"
             >modificados</button>
         </form>
     :<UploadProfileImage 

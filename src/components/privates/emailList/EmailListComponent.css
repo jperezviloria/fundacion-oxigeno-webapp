@@ -1,18 +1,19 @@
 .email-list{
     
     border-radius: 20px;
+    
 }
 
 .email-list-filters{
     margin: 30px 0;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 1fr;
     justify-items: center;
-
 }
 
 .email-list-filters-botton{
-    width: 130px;
+    
+    width: 100px;
     padding: 10px;
     border: 2px solid black;
     border-radius: 30px;
@@ -24,6 +25,18 @@
 @media only screen and (min-width: 768px) {
 }
 @media only screen and (min-width: 1024px) {
+    .email-list{
+    
+        border-radius: 20px;
+    }
+    
+    .email-list-filters{
+        margin: 30px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        justify-items: center;
+    
+    }
 }
 @media only screen and (min-width: 1200px) {
 }

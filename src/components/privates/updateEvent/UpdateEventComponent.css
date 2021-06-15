@@ -9,12 +9,11 @@
     display: grid;
     /* grid-template-columns: 1fr; */
     justify-items: center;
-    grid-template-columns: repeat(5, 20%);
-    
+    grid-template-columns: repeat(2, 50%);
 }
 
 .event-component-botton{
-    width: 200px;
+    width: 130px;
     margin: 4px;
     padding: 6px;
     border:2px solid orange;
@@ -23,4 +22,39 @@
 
 .update-management-chield{
     overflow-x: hidden;
+}
+
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 1024px) {
+}
+@media only screen and (min-width: 1200px) {    
+    .event-component{
+        text-align: center ;
+        display: grid;
+        
+        
+    }
+    
+    .event-component-all-bottons{
+        display: grid;
+        /* grid-template-columns: 1fr; */
+        justify-items: center;
+        grid-template-columns: repeat(5, 20%);
+        
+    }
+    
+    .event-component-botton{
+        width: 200px;
+        margin: 4px;
+        padding: 6px;
+        border:2px solid orange;
+        border-radius: 10px;
+    }
+    
+    .update-management-chield{
+        overflow-x: hidden;
+    }
 }

@@ -1,12 +1,13 @@
 .cuadro0{
     padding-top: 50px;
     display: grid;
-    grid-template-columns: repeat(2, 45%);
+    grid-template-columns: 1fr;
     justify-content: space-evenly;
 }
 
 .cuadro1{
-    height: 500px;
+    width: 280px;
+    height: 300px;
     border: 4px solid rgb(23, 26, 218);
     border-radius: 20px;
     overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -14,36 +15,85 @@
 }
 
 .cuadro2{
-    height: 500px;
+    width: 280px;
+    height: 300px;
     display: grid;
     justify-items: center;
     align-items: center;
+    width: 180px;
 }
 
 .cuadro3{
-    height: 400px;
-    
-}
-
-.cuadro4{
-    height: 400px;
-    
-}
-
-.cuadro5{
-    
-    width: 95%;
+    width: 280px;
     height: 600px;
-    
-    
     border: 4px solid rgb(164, 164, 206);
     border-radius: 20px;
     text-align: center;
-    
     margin: 100px auto;
-    
-    
-    
+}
 
+
+
+@media only screen and (min-width: 480px) {
+    .cuadro0{
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+    }
+    
+    .cuadro1{
+        width: 380px;
+        margin: auto;
+        height: 300px;
+        border: 4px solid rgb(23, 26, 218);
+        border-radius: 20px;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        
+    }
+    .cuadro2{
+        width: 380px;
+        height: 300px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .cuadro0{
+        grid-template-columns: repeat(2, 45%);
+    }
+    .cuadro1{
+        width: 360px;
+        height: 460px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .cuadro1{
+        width: 440px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .cuadro1{
+        height: 500px;
+        border: 4px solid rgb(23, 26, 218);
+        border-radius: 20px;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        
+    }
+    
+    .cuadro2{
+        height: 500px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .cuadro3{
+        width: 95%;
+        height: 600px;
+        border: 4px solid rgb(164, 164, 206);
+        border-radius: 20px;
+        text-align: center;
+        margin: 100px auto;
+    }
     
 }

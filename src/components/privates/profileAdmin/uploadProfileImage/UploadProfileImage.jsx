@@ -54,7 +54,7 @@ const UploadProfileImage = ({idUser, setModifyInfo, setUploadImage}) =>{
     const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop})
     
     return (
-        !query ?<div className="profile-admin-component">
+        !query ?<div className="profile-admin-upload-image-component">
             <h2>CambiarImagen</h2>
             <div {...getRootProps()}>
             <input {...getInputProps()} />
@@ -66,7 +66,7 @@ const UploadProfileImage = ({idUser, setModifyInfo, setUploadImage}) =>{
             </div>
             <button
             type="button"
-            className="profile-admin-component-button"
+            className="profile-admin-upload-image-component-button"
             onClick={() => changeInformacion()}>modificados</button>
         </div>
         : <Redirect to={ {pathname:`/admin/secure/dashboard`}}/>
