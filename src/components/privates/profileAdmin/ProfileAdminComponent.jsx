@@ -6,7 +6,7 @@ import {useDropzone} from 'react-dropzone'
 import PersonalCard from "./personalCard/PersonalCard"
 
 
-import "./ProfileAdminComponent.css"
+
 import UpdateNames from "./updateNames/UpdateNames"
 
 const ProfileAdminComponent = () =>{
@@ -61,36 +61,7 @@ const ProfileAdminComponent = () =>{
         name={personalInformation.name}
         surname={personalInformation.surname}
         setUploadImage={setUploadImage}/>
-        // ?<div className="profile-admin-component">
-        //     <h2>Hola {personalInformation.name} {personalInformation.surname}</h2>
-        //     <img 
-        //     src="https://i.imgur.com/Ah3Dyh9.png"
-        //     className="profile-admin-component-image" 
-        //     alt="" />
-        //     <p>{personalInformation.email}</p>
-        //     <button
-        //     type="button"
-        //     className="profile-admin-component-button"
-        //     onClick={() => changeInformacion()}>modificar datos</button>
-        // </div>
-        // :<div className="profile-admin-component">
-        //     <h2>Modificar datos</h2>
-        //     <div {...getRootProps()}>
-        //     <input {...getInputProps()} />
-        //     {
-        //         isDragActive ?
-        //         <p>Drop the files here ...</p> :
-        //         <p>Drag 'n' drop some files here, or click to select files</p>
-        //     }
-        //     </div>
-        //     <input type="text" placeholder="nombre" />
-        //     <input type="text" placeholder="apellido" />
-        //     <p>{personalInformation.email}</p>
-        //     <button
-        //     type="button"
-        //     className="profile-admin-component-button"
-        //     onClick={() => changeInformacion()}>modificados</button>
-        // </div>
+       
     )
 }
 
