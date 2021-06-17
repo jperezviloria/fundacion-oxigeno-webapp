@@ -36,7 +36,7 @@ const DeleteUserComponent = () =>{
     }
         
     const sendWithHttpClient = async(id) =>{
-        await HttpClient.delete(`http://localhost:5000/user/delete/${id}`)
+        await HttpClient.delete(`/user/delete/${id}`)
         .then(response =>{
             console.log(response)
             setQuery(true)
@@ -44,7 +44,7 @@ const DeleteUserComponent = () =>{
     }
 
     const getAllUsers = async() =>{
-        await HttpClient.get(`http://localhost:5000/user/getall`)
+        await HttpClient.get(`/user/getall`)
         .then(response =>{
             setallUsers(response.data.data)
         })

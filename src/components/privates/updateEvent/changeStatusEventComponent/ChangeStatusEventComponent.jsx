@@ -11,7 +11,7 @@ const ChangeStatusEventComponent = ({setChield}) =>{
     const [query, setQuery] = useState(false)
 
     const allEvents = async() =>{
-        await HttpClient.get(`http://localhost:5000/private-event/get/withstatusfalse`)
+        await HttpClient.get(`/private-event/get/withstatusfalse`)
         .then((response) =>{
             setEvents(response.data.data)
             console.log(response.data.data)
@@ -20,13 +20,13 @@ const ChangeStatusEventComponent = ({setChield}) =>{
     const changeStatusParticularEvent = async(id) =>{
         Swal.fire({
             icon: 'question',
-            title: 'Antes de borrar',
-            text: 'Confirma para borrar al usuario',
+            title: 'Antes de activar',
+            text: 'Confirma para activar el evento',
             showCancelButton: true,
             cancelButtonText: 'volver',
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Si, borrar!'
+            confirmButtonText: 'Si, activar!'
           }).then((result) =>{
                 if(result.isConfirmed){
                     sendWithHttpClient(id)
@@ -37,7 +37,7 @@ const ChangeStatusEventComponent = ({setChield}) =>{
     }
 
     const sendWithHttpClient = async (id) =>{
-        await HttpClient.put(`http://localhost:5000/private-event/update/change-true-status/${id}`)
+        await HttpClient.put(`/private-event/update/change-true-status/${id}`)
         .then(response =>{
             console.log(response)
             

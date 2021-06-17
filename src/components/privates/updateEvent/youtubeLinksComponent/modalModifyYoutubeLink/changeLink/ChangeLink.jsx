@@ -14,7 +14,7 @@ const ChangeLink = ({idToUse, closeModal}) =>{
             link: data.link
         }
         console.log(objectToChange)
-        await HttpClient.put(`http://localhost:5000/private-event/update/youtubelink/link`, objectToChange)
+        await HttpClient.put(`/private-event/update/youtubelink/link`, objectToChange)
         .then(response =>{
             console.log(response)
             closeModal()

@@ -8,7 +8,7 @@ const ParticularTeamComponent = () =>{
     const [team, setTeam] = useState([])
 
     const getUserWhenHaveTrue = async() =>{
-        await HttpClient.get(`http://localhost:5000/public/user/getall`)
+        await HttpClient.get(`/public/user/getall`)
         .then((response) =>{
             console.log(response)
             setTeam(response.data.data)

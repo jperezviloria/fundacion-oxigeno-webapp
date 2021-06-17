@@ -29,7 +29,7 @@ const ConstactsComponent = () =>{
         };
         
         console.log(constactsForm)
-        await HttpClient.post(`http://localhost:5000/contact-form/smtp/send`, constactsForm)
+        await HttpClient.post(`/contact-form/smtp/send`, constactsForm)
         .then(() =>{
         setNames("")
         setEmail("")

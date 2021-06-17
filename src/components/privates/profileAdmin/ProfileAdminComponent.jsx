@@ -34,7 +34,7 @@ const ProfileAdminComponent = () =>{
     }
 
     const getUserByEmail = async(emailUser) =>{
-        await HttpClient.get(`http://localhost:5000/user/getbyemail/${emailUser}`)
+        await HttpClient.get(`/user/getbyemail/${emailUser}`)
         .then((response) =>{
             setPersonalInformation(response.data.data)
             console.log(personalInformation)

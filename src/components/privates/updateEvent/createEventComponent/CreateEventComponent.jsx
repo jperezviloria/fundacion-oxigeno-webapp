@@ -22,7 +22,7 @@ const CreateEventComponent = ({setChield}) =>{
             date: data.date
         }
         console.log(eventToCreate)
-        await HttpClient.post(`http://localhost:5000/private-event/save/title-description`,eventToCreate)
+        await HttpClient.post(`/private-event/save/title-description`,eventToCreate)
         .then((response) =>{
             console.log(response)
             setNewEventResponse(response.data.message)

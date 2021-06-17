@@ -3,6 +3,7 @@ import UserAuthContext from "./UserAuthContext"
 import UserAuthReducer from "./UserAuthReducer"
 import axios from "axios"
 import Swal from "sweetalert2"
+import HttpClient from "../../service/axios"
 
 
 const UserAuthState = (props) =>{
@@ -19,7 +20,7 @@ const UserAuthState = (props) =>{
 
     const LoginUser = async(userAuth) =>{
 
-        const response = await axios.post(`http://localhost:5000/auth/signin`, userAuth)
+        const response = await HttpClient.post(`/auth/signin`, userAuth)
         console.log(response.data)
         if(response.data.status === 400){
             Swal.fire({

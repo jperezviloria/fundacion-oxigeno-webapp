@@ -107,7 +107,7 @@ const Modal = ({ closeModal , id}) => {
   };
 
   const getUserById = async(idValue) =>{
-    await HttpClient.get(`http://localhost:5000/contact-form/getbyid/${idValue}`)
+    await HttpClient.get(`/contact-form/getbyid/${idValue}`)
     .then((response) =>{
         console.log(response.data.message)
         setParticularContactForm(response.data.message)

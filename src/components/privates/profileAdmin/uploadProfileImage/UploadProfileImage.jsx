@@ -29,7 +29,7 @@ const UploadProfileImage = ({idUser, setModifyInfo, setUploadImage}) =>{
         const formData = new FormData();
         formData.append("image", file);
 
-        await HttpClient.post(`http://localhost:5000/user/update/upload-image/${idUser}`,formData,
+        await HttpClient.post(`/user/update/upload-image/${idUser}`,formData,
         {
             headers:{
               "Content-Type":"multipart/form-data"

@@ -28,7 +28,7 @@ const SelectorFilter = ({closeModal, style, idToUse}) =>{
             confirmButtonText: 'Si, borrar!'
           }).then((result) =>{
                 if(result.isConfirmed){
-                    HttpClient.delete(`http://localhost:5000/private-event/delete/youtubelinkbyid/${idToUse}`)
+                    HttpClient.delete(`/private-event/delete/youtubelinkbyid/${idToUse}`)
                     .then(response =>{
                         console.log(response)
                         setChield(null)
