@@ -41,8 +41,8 @@ const ConstactsComponent = () =>{
     return (
         <div className="contacts-components">
             <h1>CONTACTANOS</h1>
-            <p>telefono: +66 11 45454545</p>
-            <p>emailo: oxigeno@email.com</p>
+            <p>telefono: +58 412-3545565</p>
+            <p>emailo: oxigenovenezuela@gmail.com</p>
             <SocialMediaComponent
             style="contacts-components-images"/>
             <form className="contacts-components-form" onSubmit={handleSubmit(onSubmitContacts)}>

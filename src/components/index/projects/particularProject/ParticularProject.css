@@ -6,8 +6,12 @@
     background: linear-gradient(to bottom, rgb(72, 114, 251), rgb(155, 198, 255));
     color: rgb(2, 5, 17);
     width: 200px;
+    min-height: 400px;
+    max-height: 600px;
+
+    font-size: 10px;
     display: grid;
-    grid-template-columns: repeat(2,50%);
+    grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
     margin: 50px auto;
@@ -21,6 +25,12 @@
     width: 150px;
 }
 
+.particular-project-component-text{
+    display: grid;
+    align-content: center;
+
+}
+
 @media only screen and (min-width: 480px) {
     .particular-project-component{
         width: 300px;
@@ -30,6 +40,15 @@
     }
 }
 @media only screen and (min-width: 768px) {
+    .particular-project-component{
+        grid-template-columns: repeat(2, 50%);
+        width: 600px;
+        font-size: 14px;
+    }
+    .particular-project-component-image{
+        width: 260px;
+        margin: auto;
+    }
 }
 @media only screen and (min-width: 1024px) {
 }
