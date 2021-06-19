@@ -26,7 +26,7 @@ const Modal = ({ closeModal , id, internalMessage}) => {
   };
 
   const getEventWitYoutubeLinksById = async(idValue) =>{
-    await HttpClient.get(`http://localhost:5000/private-event/get/eventandyoutubelink/${idValue}`)
+    await HttpClient.get(`/private-event/get/eventandyoutubelink/${idValue}`)
     .then((response) =>{
         console.log(response.data.data)
         setParticularEvent(response.data.data)
@@ -59,12 +59,12 @@ const Modal = ({ closeModal , id, internalMessage}) => {
       <hr />
       <YoutubeLink>
       {youtubeLinks.map(p => (
-        <>
+        <div>
         <p>{p.name}</p>
         <p>{p.link}</p>
-        <p>{p.position}</p>
+        <p>posicion: {p.position}</p>
         <button onClick={() =>implementSelector(p.id)}>🔵</button>
-        </>
+        </div>
       ))}
       </YoutubeLink>
       <div className="modal-btns">

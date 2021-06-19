@@ -1,9 +1,12 @@
 .delete-event-component{
-    margin-top: 50px;
     display: grid;
-    grid-template-columns: 10% 40% 15% 10%;
-    justify-content: center;
-    
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 230px;
+    border: 2px solid #2c46bd;
+    border-radius: 20px;
+    margin: 50px auto;
+    padding: 10px;
 }
 
 .delete-event-component-button{
@@ -15,4 +18,26 @@
 .update-management-chield{
     overflow-x: hidden;
     height: 400px;
+}
+
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+    .delete-event-component{
+        width: 530px;
+        margin-top: 50px;
+        justify-content: center;
+        grid-template-columns: 20% 40% 25% 10%;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 1024px) {
+}
+@media only screen and (min-width: 1200px) {
+    .delete-event-component{
+        width: 930px;
+        margin-top: 50px;
+        justify-content: center;
+        grid-template-columns: 10% 40% 15% 10%;
+    }
 }

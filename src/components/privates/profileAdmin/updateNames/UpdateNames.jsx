@@ -26,7 +26,7 @@ const UpdateNames = ({idUser,setModifyInfo, name, surname, setUploadImage}) =>{
 
     const updateNameAndSurnameById = async(userUpdated) =>{
 
-        await HttpClient.put(`http://localhost:5000/user/update/nameandsurname/`,userUpdated)
+        await HttpClient.put(`/user/update/nameandsurname/`,userUpdated)
         .then((response) =>{
             if(response.status === 200){
                 setQuery(true)

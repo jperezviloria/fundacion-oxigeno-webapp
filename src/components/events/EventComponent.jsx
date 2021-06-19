@@ -13,7 +13,7 @@ const EventComponent = () =>{
     
 
     const gettingEventData = async() =>{
-        await HttpClient.get(`http://localhost:5000/public-event/get/events-with-youtubelinks`)
+        await HttpClient.get(`/public-event/get/events-with-youtubelinks`)
         .then((response) =>{
             console.log(response)
             setEvents(response.data.data)

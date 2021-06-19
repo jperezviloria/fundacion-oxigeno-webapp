@@ -24,7 +24,7 @@ const EmailListComponent = () =>{
     }
     
     const implementingHttpClient = async(particularUrl) =>{
-        await HttpClient.get(`http://localhost:5000/contact-form/${particularUrl}`)
+        await HttpClient.get(`/contact-form/${particularUrl}`)
         .then((response) =>{
             console.log(response.data.data)
             setEmailList(response.data.data)

@@ -1,5 +1,26 @@
 .create-event-component{
     display: grid;
     justify-self: center;
-    width: 600px;
+    width: 200px;
+}
+
+@media only screen and (min-width: 480px) {
+    .create-event-component{
+        width: 300px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .create-event-component{
+        width: 450px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .create-event-component{
+        width: 550px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .create-event-component{
+        width: 600px;
+    }
 }

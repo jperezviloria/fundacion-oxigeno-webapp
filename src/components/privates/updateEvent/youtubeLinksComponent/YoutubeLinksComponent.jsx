@@ -14,7 +14,7 @@ const YoutubeLinksComponent = () =>{
     const [query, setQuery] = useState(false)
 
     const allEvents = async() =>{
-        await HttpClient.get(`http://localhost:5000/private-event/getall`)
+        await HttpClient.get(`/private-event/getall`)
         .then((response) =>{
             setEvents(response.data.data)
             console.log(response.data.data)
@@ -59,7 +59,7 @@ const YoutubeLinksComponent = () =>{
     }
 
     const sendWithHttpClient = async (id) =>{
-        await HttpClient.delete(`http://localhost:5000/private-event/deletebyid/${id}`)
+        await HttpClient.delete(`/private-event/deletebyid/${id}`)
         .then(response =>{
             console.log(response)
             
@@ -94,11 +94,11 @@ const YoutubeLinksComponent = () =>{
                 onClick={() => modifyYoutubeLink(particularEvent.id)}>🟡</button> */}
                 <ButtonAddYoutubeLink
                 message="agregar"
-                internalMessage="agregar links de youtube"
+                internalMessage=""
                 id={particularEvent.id}/>
                 <ButtonToModifyYoutubeLink
                 message="modificar"
-                internalMessage="modificar links de youtube"
+                internalMessage=""
                 id={particularEvent.id}/>
             </div>
         ))}

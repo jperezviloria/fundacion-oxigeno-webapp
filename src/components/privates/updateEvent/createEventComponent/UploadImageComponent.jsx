@@ -28,7 +28,7 @@ const UploadProfileImage = ({idEvent, setModifyInfo, setUploadImage, setChield})
         const formData = new FormData();
         formData.append("image", file);
 
-        await HttpClient.put(`http://localhost:5000/private-event/update/upload-image/${idEvent}`,formData,
+        await HttpClient.put(`/private-event/update/upload-image/${idEvent}`,formData,
         {
             headers:{
               "Content-Type":"multipart/form-data"

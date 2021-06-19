@@ -20,18 +20,11 @@ const PresentationComponent = () =>{
             <iframe className="presentation-component-video" src="https://www.youtube.com/embed/qdsQGRZUVCs?controls=0?rel=0&amp;autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen play ></iframe>
             <div className="presentation-component-mision">
                 <div 
-                data-aos="fade-right"
-                data-aos-offset="400"
-                data-aos-duration="800">
-                    <img 
-                    className="presentation-component-mision-image"
-                    src="https://cdn.pixabay.com/photo/2020/11/14/14/47/kids-5741934_960_720.png" alt="" />
-                </div>
-                <div 
-                data-aos="fade-left"
-                
-                data-aos-offset="400"
-                data-aos-duration="800">
+                // data-aos="fade-left"
+                //
+                // data-aos-offset="400"
+                // data-aos-duration="800">
+                    >
                     <h2 
                     className="presentation-component-title">Nuestra Misión</h2>
                     <p>Fundación Oxígeno tiene con el propósito difundir los derechos de los niños, niñas y adolescentes, especialmente, en el área sexual. Trabajando con los derechos sexuales y reproductivos, con el propósito de tratar que los adolescentes entiendan la sexualidad de manera responsable, para evitar infecciones de transmisión sexual, iniciación temprana en la sexualidad y embarazo adolescente.</p>

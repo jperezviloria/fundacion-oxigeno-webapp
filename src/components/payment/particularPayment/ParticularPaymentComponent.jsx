@@ -19,7 +19,7 @@ const ParticularPaymentComponet = () =>{
         };
         console.log(payment)
         console.log(typeof(payment.value))
-        await HttpClient.post(`http://localhost:5000/paypal/create-payment`,payment)
+        await HttpClient.post(`/paypal/create-payment`,payment)
         .then((response) =>{
             console.log(response.data.data.links[1].href)
             setPaypalUrl(response.data.data.links[1].href)

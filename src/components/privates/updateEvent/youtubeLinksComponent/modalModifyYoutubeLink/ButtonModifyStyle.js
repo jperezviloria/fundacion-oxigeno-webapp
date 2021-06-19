@@ -22,6 +22,7 @@ export const Boton = styled.button`
     
     padding: 0px 0px;
     border-radius: 100px;
+    font-size: 10px;
     
     }
 `

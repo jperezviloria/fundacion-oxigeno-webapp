@@ -13,7 +13,7 @@ const ChangeName = ({idToUse, closeModal}) =>{
             name: data.name
         }
         console.log(objectToChange)
-        await HttpClient.put(`http://localhost:5000/private-event/update/youtubelink/name`, objectToChange)
+        await HttpClient.put(`/private-event/update/youtubelink/name`, objectToChange)
         .then(response =>{
             console.log(response)
             closeModal()

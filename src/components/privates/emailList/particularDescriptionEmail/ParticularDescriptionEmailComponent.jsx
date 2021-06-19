@@ -12,7 +12,7 @@ const ParticularDescriptionEmailComponent = ({name, date, id, enable,setConfirmE
     //const [confirmEmail, setConfirmEmail] = useState(false)
 
     const changeEnable = async() =>{
-        await HttpClient.put(`http://localhost:5000/contact-form/change-status/${id}`)
+        await HttpClient.put(`/contact-form/change-status/${id}`)
         .then(() =>{
             setConfirmEmail(true)
         })
