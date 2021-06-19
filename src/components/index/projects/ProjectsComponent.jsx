@@ -41,14 +41,14 @@ const ProjectsComponent = () =>{
                 </SwiperSlide>
                 <SwiperSlide>
                     <ParticularProject
-                        imageUrl="https://res.cloudinary.com/protobot/image/upload/v1622662918/qjlfhjzrinyyb6nlx74p.png"
-                        title="Fundación Oxígeno"
+                        imageUrl="https://res.cloudinary.com/protobot/image/upload/v1623980423/WhatsApp_Image_2021-06-17_at_1.48.34_PM_vakjop.jpg"
+                        title="Trabajo comunitario de sensibilización"
                         description="Programa de trabajo con las comunidades de sensibilización en materia de Trata, tráfico, prostitución, explotación sexual."/>
                 </SwiperSlide>
                 <SwiperSlide>
                 <ParticularProject
                     imageUrl="https://res.cloudinary.com/protobot/image/upload/v1623983139/WhatsApp_Image_2021-06-17_at_1.04.36_PM_gr1aaz.jpg"
-                    title="Programa psicoeducativo"
+                    title="Talleres psicoeducativos"
                     description="Programa de trabajo con las comunidades de sensibilización en materia de Trata, tráfico, prostitución, explotación sexual."/>
                 </SwiperSlide>
                 

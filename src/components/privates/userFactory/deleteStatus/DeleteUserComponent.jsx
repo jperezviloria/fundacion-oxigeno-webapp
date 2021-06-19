@@ -63,7 +63,7 @@ const DeleteUserComponent = () =>{
                 allUsers.map(particularUser =>(
                     <div className="delete-user-particular">
                         <li> {particularUser.id} {particularUser.email}</li>
-                        <button onClick={()=>{onSubmitDeleteByID(particularUser.id)}}>eliminar</button>
+                        <button onClick={()=>{onSubmitDeleteByID(particularUser.id)}}>🗑️</button>
                     </div>
                 ))
                 }

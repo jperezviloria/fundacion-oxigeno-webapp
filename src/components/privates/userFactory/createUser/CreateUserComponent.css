@@ -1,6 +1,6 @@
 .user-factory{
-    width: 500px;
-    padding: 100px 0;
+    width: 250px;
+    padding: 20px 0;
     display: grid;
     margin: 0 auto;
       
@@ -21,10 +21,23 @@
 }
 
 @media only screen and (min-width: 480px) {
+    .user-factory{
+        width: 350px;
+        padding: 20px 0;
+        text-align: center;
+    }
 }
 @media only screen and (min-width: 768px) {
+    .user-factory{
+        width: 500px;
+        padding: 20px 0;
+        text-align: center;
+    }
 }
 @media only screen and (min-width: 1024px) {
 }
 @media only screen and (min-width: 1200px) {
+    .user-factory{
+        padding: 70px 0;
+    }
 }

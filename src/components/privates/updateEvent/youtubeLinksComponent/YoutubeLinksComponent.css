@@ -1,11 +1,31 @@
 .youtube-links-event-component{
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 10% 40% 10% 10% 10%;
+    grid-template-columns: 1fr;
     justify-content: center;
 }
 
 .youtube-links-event-component-button{
     width: 80px;
     height: 50px;
+}
+
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 1024px) {
+}
+@media only screen and (min-width: 1200px) {
+    .youtube-links-event-component{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 10% 40% 10% 10% 10%;
+        justify-content: center;
+    }
+
+    .youtube-links-event-component-button{
+        width: 80px;
+        height: 50px;
+    }
 }
