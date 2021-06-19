@@ -22,7 +22,7 @@ const Modal = ({ closeModal , id, internalMessage}) => {
   };
 
   const getEventWitYoutubeLinksById = async(idValue) =>{
-    await HttpClient.get(`http://localhost:5000/private-event/get/eventandyoutubelink/${idValue}`)
+    await HttpClient.get(`/private-event/get/eventandyoutubelink/${idValue}`)
     .then((response) =>{
         console.log(response.data.data)
         setParticularEvent(response.data.data)
@@ -72,7 +72,7 @@ const Modal = ({ closeModal , id, internalMessage}) => {
       position: positionChecked
     }
     console.log(newYoutubeLink)
-    await HttpClient.post(`http://localhost:5000/private-event/save/youtubelink`, newYoutubeLink)
+    await HttpClient.post(`/private-event/save/youtubelink`, newYoutubeLink)
     .then(response =>{
       console.log(response)
       setQuery(true)

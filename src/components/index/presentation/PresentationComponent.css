@@ -20,7 +20,7 @@ div .presentation-component{
 
 .presentation-component-mision{
     display: grid;
-    grid-template-columns: 0% 100%;
+    grid-template-columns: 1fr;
     align-items: center;
     font-size: 14px;
 }
@@ -44,7 +44,6 @@ div .presentation-component{
     }
     .presentation-component-mision{
         display: grid;
-        grid-template-columns: repeat(2, 50%);
         align-items: center;
         font-size: 18px;
     }

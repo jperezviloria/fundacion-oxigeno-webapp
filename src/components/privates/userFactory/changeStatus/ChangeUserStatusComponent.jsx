@@ -30,7 +30,7 @@ const ChangeUserStatusComponent = () =>{
     }
 
     const sendWithHttpClient = async(userToChange) =>{
-        await HttpClient.put(`http://localhost:5000/user/change/enable`, userToChange)
+        await HttpClient.put(`/user/change/enable`, userToChange)
         .then(response =>{
             console.log(response)
 
@@ -38,7 +38,7 @@ const ChangeUserStatusComponent = () =>{
     }
 
     const getAllUsers = async() =>{
-        await HttpClient.get(`http://localhost:5000/user/getall`)
+        await HttpClient.get(`/user/getall`)
         .then(response =>{
             setAllUsers(response.data.data)
 

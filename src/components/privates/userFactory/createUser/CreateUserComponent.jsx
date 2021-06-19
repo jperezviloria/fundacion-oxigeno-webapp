@@ -46,7 +46,7 @@ const CreateUserComponent = () =>{
             console.log(newUser)
             const token = localStorage.getItem("token")
             console.log(token)
-            await HttpClient.post(`http://localhost:5000/private-auth/signup`, newUser)
+            await HttpClient.post(`/private-auth/signup`, newUser)
             .then(response =>{
                 console.log(response)
             })
@@ -55,7 +55,7 @@ const CreateUserComponent = () =>{
     }
 
     const getAllUsers = async() =>{
-        await HttpClient.get(`http://localhost:5000/user/getall`)
+        await HttpClient.get(`/user/getall`)
         .then(response =>{
             console.log(response)
         })

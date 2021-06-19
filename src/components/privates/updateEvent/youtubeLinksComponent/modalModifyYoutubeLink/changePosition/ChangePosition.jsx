@@ -13,7 +13,7 @@ const ChangePosition = ({idToUse, closeModal}) =>{
             position: data.position
         }
         console.log(objectToChange)
-        await HttpClient.put(`http://localhost:5000/private-event/update/youtubelink/position`, objectToChange)
+        await HttpClient.put(`/private-event/update/youtubelink/position`, objectToChange)
         .then(response =>{
             console.log(response)
             closeModal()
