@@ -20,7 +20,7 @@ const SelectorFilter = ({closeModal, style, idToUse}) =>{
         Swal.fire({
             icon: 'question',
             title: 'Antes de borrar',
-            text: 'Confirma para borrar al usuario',
+            text: 'Confirma para borrar el Link',
             showCancelButton: true,
             cancelButtonText: 'volver',
             confirmButtonColor: '#3085d6',

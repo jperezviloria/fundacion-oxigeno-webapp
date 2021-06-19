@@ -94,17 +94,49 @@ export const Imagen = styled.img`
 
 export const YoutubeLink = styled.ul`
   display: grid;
-  grid-template-columns: repeat(2, 40%) repeat(2, 10%);
+  grid-template-columns: 1fr;
+
+  border-radius: 10px;
   text-align: center;
-  
+
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  height: 120px;
-  
-  p{
+  height: 320px;
+
+  div {
+    
+    border: 2px solid #152590;
+    margin: 10px auto;
+    width: 260px;
+    border-radius: 15px;
+  }
+
+  p {
     display: grid;
     font-size: 10px;
+  }
+
+  button {
+    height: 30px;
+  }
+
+  @media only screen and (min-width: 480px) {
+    div {
+      width: 360px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    div {
+      width: 560px;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+  }
+  @media only screen and (min-width: 1200px) {
+    div{
+      width: 760px;
+    }
   }
 `
 

@@ -94,11 +94,11 @@ const YoutubeLinksComponent = () =>{
                 onClick={() => modifyYoutubeLink(particularEvent.id)}>🟡</button> */}
                 <ButtonAddYoutubeLink
                 message="agregar"
-                internalMessage="agregar links de youtube"
+                internalMessage=""
                 id={particularEvent.id}/>
                 <ButtonToModifyYoutubeLink
                 message="modificar"
-                internalMessage="modificar links de youtube"
+                internalMessage=""
                 id={particularEvent.id}/>
             </div>
         ))}

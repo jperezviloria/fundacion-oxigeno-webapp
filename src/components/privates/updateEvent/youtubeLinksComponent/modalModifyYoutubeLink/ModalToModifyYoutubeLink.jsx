@@ -59,12 +59,12 @@ const Modal = ({ closeModal , id, internalMessage}) => {
       <hr />
       <YoutubeLink>
       {youtubeLinks.map(p => (
-        <>
+        <div>
         <p>{p.name}</p>
         <p>{p.link}</p>
-        <p>{p.position}</p>
+        <p>posicion: {p.position}</p>
         <button onClick={() =>implementSelector(p.id)}>🔵</button>
-        </>
+        </div>
       ))}
       </YoutubeLink>
       <div className="modal-btns">

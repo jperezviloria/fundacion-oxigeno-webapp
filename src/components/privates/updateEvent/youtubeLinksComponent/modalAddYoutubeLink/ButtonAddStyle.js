@@ -14,7 +14,7 @@ export const Boton = styled.button`
     margin-bottom: 0px; */
   }
   @media only screen and (min-width: 480px) {
-    padding: 10px 100px;
+    padding: 10px 10px;
     /* margin-top:0px;
     margin-bottom: 0px; */
   }
@@ -22,6 +22,7 @@ export const Boton = styled.button`
     
     padding: 0px 0px;
     border-radius: 100px;
+    font-size: 10px;
     
     }
 `
