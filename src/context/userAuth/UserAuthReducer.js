@@ -1,4 +1,4 @@
-import {LOGIN, LOGOUT} from "../types"
+import {LOGIN, LOGOUT, CHANGETRUE} from "../types"
 
 export default (state, action) => {
     const {payload, type} = action
@@ -8,6 +8,7 @@ export default (state, action) => {
             localStorage.setItem("email", payload.user.email);
             localStorage.setItem("token", payload.token);
             localStorage.setItem("logued", true);
+            localStorage.setItem("rol", payload.user.idrol);
             return{
                 ...state,
                 email: payload.user.email,
@@ -23,7 +24,12 @@ export default (state, action) => {
                 user: null,
                 token: null,
                 isAuthenticated: false,
-                rol: null,
+                idRol: null,
+            }
+        case CHANGETRUE:
+            return{
+                ...state,
+                isAuthenticated: true,
             }
         default:
             return state;

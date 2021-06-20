@@ -44,6 +44,12 @@ const UserAuthState = (props) =>{
         }
     }
 
+    const changeTrue = () =>{
+        dispatch({
+            type:'CHANGETRUE',
+            payload: initialState
+        })
+    }
     const LogoutUser = () =>{
         dispatch({
             type: 'LOGOUT',
@@ -61,6 +67,7 @@ const UserAuthState = (props) =>{
             idRol: state.idRol,
             LoginUser,
             LogoutUser,
+            changeTrue,
         }}>
             {props.children}
         </UserAuthContext.Provider>

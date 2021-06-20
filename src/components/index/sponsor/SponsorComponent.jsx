@@ -23,9 +23,9 @@ const SponsorComponent = () =>{
                 className="sponsor-component-image-particular"
                 src="https://res.cloudinary.com/protobot/image/upload/v1623427782/cisp-logo_xjgrdl.png" 
                 alt="" />
-                <img 
+                <img
                 className="sponsor-component-image-particular"
-                src="https://res.cloudinary.com/protobot/image/upload/v1623427782/crisis-care-logo_baprze.png" 
+                src="https://res.cloudinary.com/protobot/image/upload/v1623427784/lineaesperanza-logo_qxtydn.png"
                 alt="" />
                 <img 
                 className="sponsor-component-image-particular"

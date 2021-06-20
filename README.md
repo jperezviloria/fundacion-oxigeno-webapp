@@ -1,3 +1,10 @@
+sudo docker stop
+
+sudo docker rm $(sudo docker ps -a -f status=exited -q)
+
+sudo docker build -t oxigeno-web-image .
+
+sudo docker run  -d --restart always -p 3000:3000 --name fundacion-oxigeno-web oxigeno-web-image
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
