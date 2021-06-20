@@ -3,6 +3,10 @@ FROM node:latest
 
 WORKDIR /usr/src/app
 
+# add `/app/node_modules/.bin` to $PATH
+
+ENV PATH /app/node_modules/.bin:$PATH
+
 COPY package.json package-lock.json ./
 
 COPY . /usr/src/app
