@@ -15,5 +15,5 @@ RUN npm run build
 
 # paso 2 depliegue nginx
 FROM nginx:latest
-EXPOSE 80
 COPY --from=build-step /usr/src/app/build/ /usr/share/nginx/html
+EXPOSE 80
