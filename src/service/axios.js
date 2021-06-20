@@ -4,7 +4,7 @@ dotenv();
 
 const HttpClient = axios.create({
     // baseURL: process.env.FUNDACION_OXIGENO_REACT_APP_BACKEND_URL,
-    baseURL: "http://localhost:5000",
+    baseURL: "http://http://72.167.32.219:5000",
     timeout: 100000,
     headers:{
         "Content-Type":"application/json"
