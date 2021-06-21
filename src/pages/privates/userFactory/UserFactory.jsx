@@ -17,7 +17,7 @@ const UserFactory = () =>{
     const [selectionUserFactory, setSelectionUserFactory] = useState(null)
 
     const selectedCreateComponent = () =>{
-        setSelectionUserFactory(<CreateUserComponent/>)
+        setSelectionUserFactory(<CreateUserComponent setSelectionUserFactory={setSelectionUserFactory} />)
     }
 
     const selectedUpdateComponent = () =>{
@@ -29,7 +29,7 @@ const UserFactory = () =>{
     }
 
     return (
-        <div>
+        <div className="filter-factory-base">
 
         <div className="filter-factory">
             <button 

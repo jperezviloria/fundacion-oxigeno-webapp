@@ -11,27 +11,46 @@ const FooterComponent = () =>{
                 </p>
             </div>
             <div className="footer-julioperez-all-images">
+                <a href="https://protobot.dev"
+                   target="_blank"
+                   rel="noopener noreferrer">
                 <img
                 className="footer-julioperez-images" 
-                src="https://media-exp1.licdn.com/dms/image/C4D0BAQEQ_A5PK1TODQ/company-logo_200_200/0/1618621958527?e=2159024400&v=beta&t=JH5VQ-0IhXOYsqYIJkpsmmeDmhqR9YRcjgZmclI92CY"
+                src="https://res.cloudinary.com/protobot/image/upload/v1624291408/Protobot2_qdpx39.png"
                 alt="protobot" />
+                </a>
+                <a href="https://www.linkedin.com/in/jperezviloria/"
+                   target="_blank"
+                   rel="noopener noreferrer">
                 <img
                 className="footer-julioperez-images" 
-                src="https://img2.freepng.es/20180601/ls/kisspng-linkedin-computer-icons-youtube-social-media-5b117d32a9d795.2147815715278728186957.jpg" 
+                src="https://res.cloudinary.com/protobot/image/upload/v1624291467/dUHYq7K_ljgvfd.png"
+                alt="linkedin-julio-perez"/>
+                </a>
+                <a href="https://github.com/julioperezdev"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                <img
+                className="footer-julioperez-images" 
+                src="https://res.cloudinary.com/protobot/image/upload/v1624291396/github_PNG58_eucah0.png"
                 alt="github-protobot"/>
+                </a>
+                <a href="https://www.instagram.com/julioperez.dev/"
+                   target="_blank"
+                   rel="noopener noreferrer">
                 <img
                 className="footer-julioperez-images" 
-                src="https://www.pngitem.com/pimgs/m/254-2545120_gray-github-icon-png-transparent-png.png" 
-                alt="github-protobot"/>
-                <img
-                className="footer-julioperez-images" 
-                src="https://www.pinclipart.com/picdir/big/366-3665404_instagram-logo-grey-dark-gray-instagram-icon-clipart.png" 
+                src="https://res.cloudinary.com/protobot/image/upload/v1624291407/instagram-logo_ogbhuo.png"
                 alt="instagram-protobot"/>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=1227615902"
+                   target="_blank"
+                   rel="noopener noreferrer">
                 <img
                 className="footer-julioperez-images" 
-                src="https://www.cafelapalma.com/wp-content/uploads/2015/12/facebook-logo-grey.png" 
+                src="https://res.cloudinary.com/protobot/image/upload/v1624291401/facebook_logos_PNG19751_uvvdve.png"
                 alt="facebook-protobot"/>
-                
+                </a>
             </div>
             
         </div>

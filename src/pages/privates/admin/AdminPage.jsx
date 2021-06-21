@@ -21,7 +21,7 @@ const AdminPage = () =>{
     }, [isAuthenticated])
 
     return (
-        <div >
+        <div className="cuadroBase">
             <div className="cuadro0">
                 <div className="cuadro1">
                     <EmailListComponent/>

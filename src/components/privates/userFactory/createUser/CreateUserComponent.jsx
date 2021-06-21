@@ -4,8 +4,9 @@ import {useForm} from "react-hook-form"
 import HttpClient from "../../../../service/axios"
 
 import "./CreateUserComponent.css"
+import {Redirect} from "react-router-dom";
 
-const CreateUserComponent = () =>{
+const CreateUserComponent = ({setSelectionUserFactory}) =>{
 
     const {register, handleSubmit} = useForm()
 
@@ -48,7 +49,12 @@ const CreateUserComponent = () =>{
             console.log(token)
             await HttpClient.post(`/private-auth/signup`, newUser)
             .then(response =>{
-                console.log(response)
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Hurra!!',
+                    text: 'Ahora tienes un nuevo usuario para el equipo',
+                })
+                setSelectionUserFactory(null)
             })
         }
         

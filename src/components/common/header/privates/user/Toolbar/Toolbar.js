@@ -17,6 +17,7 @@ const toolbar = props => (
           <li><Link to="/donar">DONA</Link></li>
           <li><Link to="/equipo">EQUIPO</Link></li>
           <li><Link to="/eventos">EVENTOS</Link></li>
+          <li><Link to="/admin/secure/dashboard">ADMINISTRADOR</Link></li>
           <li><Link to="/logout">LOGOUT</Link></li>
         </ul>
       </div>

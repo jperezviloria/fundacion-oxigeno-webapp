@@ -52,7 +52,7 @@ const ParticularPaymentComponet = () =>{
         :
             <>
                 {window.open(paypalUrl, '_blank')}
-                <img src="https://images.vexels.com/media/users/3/161141/isolated/preview/8cb947b2e21cfb55d4e545de6eefc334-gracias-gracias-etiqueta-adhesiva-by-vexels.png" alt=""></img>
+                <h1>Tu donación está en proceso</h1>
             </>
 
        

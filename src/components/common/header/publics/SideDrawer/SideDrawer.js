@@ -12,12 +12,12 @@ const sideDrawer = props => {
   return (
     <nav className={drawerClasses}>
       <ul>
-          <li><Link to="/">INICIO</Link></li>
-          <li><Link to="/donar">DONA</Link></li>
-          <li><Link to="/equipo">EQUIPO</Link></li>
-          <li><a href="http://www.fundacionoxigeno.blogspot.com" target="_blank" rel="noopener noreferrer">BLOG</a></li>
-          <li><Link to="/eventos">EVENTOS</Link></li>
-          <li><Link to="/login">LOGIN</Link></li>
+          <li><Link to="/" onClick={props.click}>INICIO</Link></li>
+          <li><Link to="/donar" onClick={props.click}>DONA</Link></li>
+          <li><Link to="/equipo" onClick={props.click}>EQUIPO</Link></li>
+          <li ><a href="http://www.fundacionoxigeno.blogspot.com" target="_blank" rel="noopener noreferrer">BLOG</a></li>
+          <li><Link to="/eventos" onClick={props.click}>EVENTOS</Link></li>
+          <li><Link to="/login" onClick={props.click}>LOGIN</Link></li>
       </ul>
     </nav>
   );
