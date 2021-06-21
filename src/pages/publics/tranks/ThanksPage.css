@@ -1,0 +1,26 @@
+.thanks-page-base{
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    padding-top: 100px;
+}
+
+.thanks-page-image{
+    width: 300px;
+}
+
+.thanks-page-text{
+    width: 600px;
+}
+
+.thanks-page-button{
+    text-decoration: none;
+    color: #faf8f6;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 16px;
+    background-color: #75a4da;
+    width: 200px;
+    margin: 10px;
+    border-radius: 20px;
+}

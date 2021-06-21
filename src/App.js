@@ -37,6 +37,7 @@ import {
   // useHistory,
   // useLocation
 } from "react-router-dom";
+import ThanksPage from "./pages/publics/tranks/ThanksPage";
 
 const App = () =>{
   return(
@@ -66,6 +67,9 @@ const App = () =>{
         </Route>
         <Route path="/admin/secure/dashboar">
           <AdminPage/>
+        </Route>
+        <Route path="/thanks">
+          <ThanksPage/>
         </Route>
         <PrivatesRoutes exact path ="/admin/secure/dashboard" component={AdminPage} />
         <PrivatesRoutes exact path ="/admin/secure/factory" component={UserFactory} />
