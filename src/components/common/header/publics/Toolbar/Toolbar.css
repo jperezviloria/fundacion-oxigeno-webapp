@@ -23,6 +23,10 @@
   .toolbar__logo {
     margin-left: 1rem;
   }
+
+.toolbar__logo img{
+  width: 180px;
+}
   
   .toolbar__logo a {
     color: white;

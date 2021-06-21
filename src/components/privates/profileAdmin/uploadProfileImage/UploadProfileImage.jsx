@@ -55,13 +55,13 @@ const UploadProfileImage = ({idUser, setModifyInfo, setUploadImage}) =>{
     
     return (
         !query ?<div className="profile-admin-upload-image-component">
-            <h2>CambiarImagen</h2>
+            <h2>Cambiar Imagen</h2>
             <div {...getRootProps()}>
             <input {...getInputProps()} />
             {
                 isDragActive ?
-                <p>Drop the files here ...</p> :
-                <p>Drag 'n' drop some files here, or click to select files</p>
+                <p>Coloca la imagen de perfil aqui ...</p> :
+                <p>Coloca la imagen de perfil aqui, o presiona click y seleccione la imagen</p>
             }
             </div>
             <button

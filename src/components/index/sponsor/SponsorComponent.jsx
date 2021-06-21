@@ -7,8 +7,8 @@ const SponsorComponent = () =>{
 
         <div className="sponsor-component">
             <div>
-                <h1>Titulo</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque commodi nemo culpa mollitia esse voluptatem molestiae dolor iusto voluptas a!</p>
+                <h1>Aliados</h1>
+                <p>La Fundación Oxígeno se complace en establecer relaciones de colaboración y alianzas con estas instituciones, por los derechos de los niños, niñas y adolescentes</p>
             </div>
             <div className="sponsor-component-image">
                 <img 

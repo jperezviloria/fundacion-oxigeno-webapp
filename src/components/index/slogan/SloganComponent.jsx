@@ -10,7 +10,7 @@ const SloganComponent = () =>{
     return (
         <div className="slogan-component">
             <h1 className="slogan-component-title">Fundación oxígeno trabaja por los derechos de los niños, niñas y adolescentes</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error aspernatur deleniti in.</p>
+            <p>Tu apoyo es vital para continuar ayudando a más personas.</p>
             <Link className="slogan-component-link" to="/donar">DONAR</Link>
             <SocialMediaComponent 
             style="slogan-component-socialmedia"/>

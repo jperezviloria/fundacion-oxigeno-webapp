@@ -44,12 +44,14 @@ const UpdateNames = ({idUser,setModifyInfo, name, surname, setUploadImage}) =>{
         className="profile-admin-update-names-component" 
         onSubmit={handleSubmit(changeInformacion)}>
             <h2>Modificar datos</h2>
-            <input 
-            {...register("name")} 
+            <input
+            {...register("name")}
+            required
             type="text"             
             placeholder="nombre" />
             <input 
-            {...register("surname")} 
+            {...register("surname")}
+            required
             type="text"     
             placeholder="apellido" />
             <button

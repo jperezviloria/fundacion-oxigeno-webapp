@@ -13,6 +13,10 @@ const toolbar = props => (
       <div className="spacer" />
       <div className="toolbar_navigation-items">
         <ul>
+          <li><Link to="/">INICIO</Link></li>
+          <li><Link to="/donar">DONA</Link></li>
+          <li><Link to="/equipo">EQUIPO</Link></li>
+          <li><Link to="/eventos">EVENTOS</Link></li>
           <li><Link to="/logout">LOGOUT</Link></li>
         </ul>
       </div>

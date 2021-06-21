@@ -48,7 +48,7 @@ const ProjectsComponent = () =>{
                 <SwiperSlide>
                 <ParticularProject
                     imageUrl="https://res.cloudinary.com/protobot/image/upload/v1623983139/WhatsApp_Image_2021-06-17_at_1.04.36_PM_gr1aaz.jpg"
-                    title="Talleres psicoeducativos"
+                    title="La Fundación Oxígeno cuenta con un Programa psicoeducativo en las instituciones públicas y privadas, con charlas relacionadas con derechos sexuales y reproductivos de los niños, niñas y adolescentes."
                     description="Programa de trabajo con las comunidades de sensibilización en materia de Trata, tráfico, prostitución, explotación sexual."/>
                 </SwiperSlide>
                 

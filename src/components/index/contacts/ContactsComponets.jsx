@@ -40,9 +40,9 @@ const ConstactsComponent = () =>{
 
     return (
         <div className="contacts-components">
-            <h1>CONTACTANOS</h1>
-            <p>telefono: +58 412-3545565</p>
-            <p>emailo: oxigenovenezuela@gmail.com</p>
+            <h1>Contáctanos</h1>
+            <p>Teléfono: +58 412-3545565</p>
+            <p>email: oxigenovenezuela@gmail.com</p>
             <SocialMediaComponent
             style="contacts-components-images"/>
             <form className="contacts-components-form" onSubmit={handleSubmit(onSubmitContacts)}>
@@ -53,7 +53,7 @@ const ConstactsComponent = () =>{
                 className="contacts-components-inputs" 
                 required
                 type="text" 
-                placeholder="nombre y apellido *" />
+                placeholder="Nombre y Apellido *" />
                 <input 
                 {...register("email")}
                 required 
@@ -61,14 +61,14 @@ const ConstactsComponent = () =>{
                 onChange={(e) => setEmail(e.target.value)}
                 className="contacts-components-inputs" 
                 type="text" 
-                placeholder="email *" />
+                placeholder="Email *" />
                 <input 
                 {...register("phone")}
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)} 
                 className="contacts-components-inputs" 
                 type="text" 
-                placeholder="telefono" />
+                placeholder="Teléfono" />
                 <ListOfCountries
                 register={register}
                 value={country}
@@ -80,7 +80,7 @@ const ConstactsComponent = () =>{
                 onChange={(e) => setDescription(e.target.value)}
                 className="contacts-components-inputs-description" 
                 type="text" 
-                placeholder="descripcion" />
+                placeholder="Descripción" />
                 <button 
                 className="contacts-components-button"
                 type="submit">ENVIAR </button>
