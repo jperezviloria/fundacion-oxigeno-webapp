@@ -3,24 +3,55 @@
     text-align: center;
     justify-items: center;
     padding-top: 100px;
+    background-color: aliceblue;
 }
 
 .thanks-page-image{
-    width: 300px;
+    width: 200px;
 }
 
 .thanks-page-text{
-    width: 600px;
+    font-size: 14px;
+    width: 280px;
 }
 
 .thanks-page-button{
     text-decoration: none;
     color: #faf8f6;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 800;
-    padding: 16px;
+    padding: 10px;
     background-color: #75a4da;
     width: 200px;
     margin: 10px;
     border-radius: 20px;
+}
+
+
+@media only screen and (min-width: 480px) {
+    .thanks-page-image{
+        width: 250px;
+    }
+    .thanks-page-text{
+        width: 400px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .thanks-page-image{
+        width: 300px;
+    }
+    .thanks-page-text{
+        width: 600px;
+        font-size: 24px;
+    }
+    .thanks-page-button{
+        font-size: 24px;
+        padding: 16px;
+        width: 200px;
+        margin: 10px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+}
+@media only screen and (min-width: 1200px) {
 }
