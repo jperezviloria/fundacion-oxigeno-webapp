@@ -3,7 +3,6 @@
     padding: 20px 0;
     display: grid;
     margin: 0 auto;
-      
 }
 
 .user-factory-input{
@@ -37,7 +36,5 @@
 @media only screen and (min-width: 1024px) {
 }
 @media only screen and (min-width: 1200px) {
-    .user-factory{
-        padding: 70px 0;
-    }
+
 }
