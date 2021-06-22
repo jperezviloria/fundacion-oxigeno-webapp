@@ -28,7 +28,8 @@ const Modal = ({ closeModal, setShowModal, youtubeLink}) => {
     <StyledModal>
       <div ref={(node) => (modalRef = node)} className="modal">
       <iframe src={youtubeLink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <button type="button" onClick={(e) =>hideModal(e)}>Cerrar</button>
+      {/*<button onDoubleClick={() => setShowModal(false)} onSelect={() => setShowModal(false)} >Cerrar</button>*/}
+          <a href="/eventos">cerrar</a>
       </div>
     </StyledModal>
   );

@@ -20,7 +20,10 @@ const SmallYoutubeComponent = ({particularYoutubeLink}) =>{
     <div className="small-youtube" onClick={openModal} >
         <iframe onClick={openModal} className="small-youtube-iframe" src={particularYoutubeLink.link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p>{particularYoutubeLink.name}</p>
-        {showModal && <ModalSmallYoutubeLink setShowModal={setShowModal} youtubeLink={particularYoutubeLink.link}/>}
+        {showModal && <ModalSmallYoutubeLink
+            setShowModal={setShowModal}
+            youtubeLink={particularYoutubeLink.link}
+            closeModal={closeModal}/>}
     </div>
     )
 }

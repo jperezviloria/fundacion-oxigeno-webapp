@@ -11,6 +11,8 @@ export const StyledModal = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
+  
+
   .modal {
     margin-top: 100px;
     width: 690px;
@@ -43,10 +45,12 @@ export const StyledModal = styled.div`
         opacity: 0.9;
       }
     }
-    iframe{
-      width: 600px;
-      height: 400px;
+
+    iframe {
+      width: 290px;
+      height: 200px;
     }
+
     h4 {
       text-align: center;
       color: #444;
@@ -55,18 +59,26 @@ export const StyledModal = styled.div`
       font-family: "Roboto", sans-serif;
       width: 80%;
       margin: 0 auto;
-      
 
     }
+
+    a {
+      color: #0f0e0f;
+      text-decoration: none;
+      padding: 10px 50px;
+      border-radius: 20px;
+      border: 4px solid #0c1858;
+      font-weight: 800;
+    }
+
     .modal-btns {
       display: flex;
       justify-content: center;
       margin-top: 10px;
       word-spacing: 20px;
+
       a {
         text-decoration: none;
-      }
-      button {
         padding: 8px 30px;
         border-radius: 20px;
         border: 4px solid #127681;
@@ -74,19 +86,76 @@ export const StyledModal = styled.div`
       }
     }
   }
+
   @media only screen and (min-width: 310px) {
     .modal {
-      h4 {
-        font-size: 1.5rem;
-      }
-      .modal-btns {
-        button {
-          padding: 8px 50px;
-        }
+      height: 300px;
+      iframe {
+        margin-top: 30px;
+        width: 290px;
+        height: 170px;
       }
     }
   }
+
+  @media only screen and (min-width: 390px) {
+    .modal {
+      height: 300px;
+      iframe {
+        margin-top: 30px;
+        width: 390px;
+        height: 220px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 480px) {
+    .modal {
+      height: 340px;
+      iframe {
+        margin-top: 30px;
+        width: 420px;
+        height: 250px;
+      }
+    }
+  }
+  @media only screen and (min-width: 540px) {
+    .modal {
+      height: 340px;
+      iframe {
+        margin-top: 30px;
+        width: 550px;
+        height: 320px;
+      }
+    }
+  }
+ 
+
+  @media only screen and (min-width: 768px) {
+    .modal {
+      height: 440px;
+      iframe {
+        margin-top: 30px;
+        width: 600px;
+        height: 350px;
+      }
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .modal {
+      height: 540px;
+      iframe {
+        margin-top: 30px;
+        width: 680px;
+        height: 390px;
+      }
+    }
+  }
+
+ 
 `;
+
+
 
 export const Imagen = styled.img`
   width: 60px;

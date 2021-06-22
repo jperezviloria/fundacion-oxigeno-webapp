@@ -6,7 +6,7 @@ const FooterComponent = () =>{
         <div className="footer-julioperez">
             <div>
                 <p>
-                    © 2021 FUNDACION OXIGENO BY <a className = "footer-julioperez-href" href="www.protobot.dev">JULIO PEREZ </a> 
+                    © 2021 FUNDACION OXIGENO BY <a className = "footer-julioperez-href" href="https://www.linkedin.com/in/jperezviloria/">JULIO PEREZ </a>
                     - SOFTWARE DEVELOPER
                 </p>
             </div>
